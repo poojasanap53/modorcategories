@@ -1,0 +1,4616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Comprehensive Smart Home Technology Market Report 2025-2032 with market analysis, competitive landscape, and regional insights">
+    <title>Smart Home Technology Market Report 2025-2032 | Market Analysis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            line-height: 1.3;
+            color: #333;
+        }
+
+        .report-container {
+            max-width: 100%;
+            margin: 0 8px;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        /* Skip Link for Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #1e3a5f;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 4px;
+            z-index: 1000;
+        }
+
+        .skip-link:focus {
+            top: 6px;
+        }
+
+        /* Header Section */
+        .report-header {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+            color: #fff;
+            padding: 35px 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .report-header::before {
+            content: '';
+            position: absolute;
+            top: -20%;
+            right: -10%;
+            width: 120px;
+            height: 120px;
+            background: rgba(230, 126, 34, 0.2);
+            border-radius: 50%;
+            transform: rotate(45deg);
+        }
+
+        .header-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 25px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header-left h1 {
+            font-size: 2.1rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            line-height: 1.2;
+        }
+
+        .header-left .subtitle {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .meta-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 8px;
+            border-radius: 6px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .meta-value {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #e67e22;
+            margin-bottom: 2px;
+        }
+
+        .meta-label {
+            font-size: 0.75rem;
+            opacity: 0.8;
+        }
+
+        .header-right {
+            text-align: center;
+        }
+
+        .action-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary {
+            background: #e67e22;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background: #d35400;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+
+        .btn-secondary:hover {
+            background: #fff;
+            color: #1e3a5f;
+            transform: translateY(-2px);
+        }
+
+        .btn:focus {
+            outline: 2px solid #fff;
+            outline-offset: 2px;
+        }
+
+        /* Market Snapshot Section */
+        .market-snapshot {
+            background: linear-gradient(135deg, #f8fafc 0%, #e6f3ff 100%);
+            padding: 35px 30px;
+            position: relative;
+            overflow: hidden;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .market-snapshot::before {
+            content: '';
+            position: absolute;
+            bottom: -20%;
+            left: -10%;
+            width: 120px;
+            height: 120px;
+            background: rgba(30, 58, 95, 0.1);
+            border-radius: 50%;
+            transform: rotate(-45deg);
+        }
+
+        .snapshot-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .snapshot-header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .snapshot-title {
+            font-size: 1.8rem;
+            color: #1e3a5f;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .snapshot-subtitle {
+            font-size: 0.9rem;
+            color: #666;
+            opacity: 0.8;
+        }
+
+        .snapshot-grid {
+            display: grid;
+            grid-template-columns: 250px 1fr 280px;
+            gap: 20px;
+            align-items: stretch;
+        }
+
+        .left-column {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border-left: 4px solid #e67e22;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .metric-group {
+            text-align: center;
+            padding: 8px 0;
+        }
+
+        .metric-label {
+            font-size: 0.75rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            margin-bottom: 4px;
+        }
+
+        .metric-value {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1e3a5f;
+            margin-bottom: 2px;
+        }
+
+        .metric-sub {
+            font-size: 0.7rem;
+            color: #e67e22;
+            font-weight: 600;
+        }
+
+        .center-column {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .segments-panel,
+        .trends-panel {
+            background: #fff;
+            padding: 18px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            flex: 1;
+        }
+
+        .panel-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1e3a5f;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .segments-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+        }
+
+        .segment-item {
+            background: #f8fafc;
+            padding: 10px;
+            border-radius: 5px;
+            border-left: 3px solid #1e3a5f;
+            transition: background-color 0.2s ease;
+        }
+
+        .segment-item:hover {
+            background: #e6f3ff;
+            transform: translateX(2px);
+        }
+
+        .segment-name {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #1e3a5f;
+            margin-bottom: 2px;
+        }
+
+        .segment-share {
+            font-size: 0.7rem;
+            color: #e67e22;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .subsegments {
+            font-size: 0.8rem;
+            color: #666;
+            line-height: 1.4;
+            padding-left: 0.8rem;
+        }
+
+        .trends-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+
+        .trend-chip {
+            background: #e6f7ff;
+            color: #1890ff;
+            padding: 6px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-align: center;
+            transition: background-color 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 28px;
+        }
+
+        .trend-chip:hover {
+            background: #1890ff;
+            color: #fff;
+        }
+
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .factors-panel {
+            background: #fff;
+            padding: 18px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border-right: 4px solid #27ae60;
+            flex: 2;
+        }
+
+        .factors-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .factor-section {
+            padding: 8px;
+            border-radius: 5px;
+            flex: 1;
+        }
+
+        .factor-section.drivers {
+            background: #f6ffed;
+            border-left: 3px solid #52c41a;
+        }
+
+        .factor-section.restraints {
+            background: #fff2f0;
+            border-left: 3px solid #ff4d4f;
+        }
+
+        .factor-section.opportunities {
+            background: #fffbe6;
+            border-left: 3px solid #faad14;
+        }
+
+
+        .factor-section.trends {
+            background: #cbe8fb;
+            border-left: 3px solid #1890ff;
+
+        }
+
+        .factor-title {
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .factor-title.drivers {
+            color: #52c41a;
+        }
+
+        .factor-title.restraints {
+            color: #ff4d4f;
+        }
+
+        .factor-title.opportunities {
+            color: #faad14;
+        }
+
+        .factor-title.trends {
+            color: #1890ff;
+        }
+
+        .factor-list {
+            list-style: none;
+        }
+
+        .factor-list li {
+            font-size: 0.75rem;
+            color: #666;
+            padding-left: 10px;
+            position: relative;
+            line-height: 1.2;
+            margin-bottom: 2px;
+        }
+
+        .factor-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #1e3a5f;
+            font-weight: bold;
+        }
+
+        .players-panel {
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            flex: 1;
+        }
+
+        .players-grid-panel {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3px;
+            justify-content: space-around;
+        }
+
+        .player-item {
+            background: #f8fafc;
+            padding: 8px 6px;
+            border-radius: 5px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+            transition: border-color 0.2s ease;
+            flex: 1;
+            min-width: 60px;
+            max-width: 65px;
+        }
+
+        .player-item:hover {
+            border-color: #e67e22;
+            background: #fff7ed;
+        }
+
+        .player-name {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #1e3a5f;
+            margin-bottom: 2px;
+            line-height: 1.1;
+        }
+
+        .player-share {
+            font-size: 0.7rem;
+            color: #e67e22;
+            font-weight: 600;
+        }
+
+        /* Report Navigation Bar */
+        .report-navbar {
+            background: #fff;
+            border-top: 1px solid #e2e8f0;
+            border-bottom: 1px solid #e2e8f0;
+            position: relative;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .report-navbar.sticky {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .navbar-container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        .navbar-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 5px;
+        }
+
+        .nav-link {
+            padding: 15px 20px;
+            color: #1e3a5f;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            flex: 1;
+            text-align: center;
+        }
+
+        .nav-link:hover {
+            color: #e67e22;
+            border-bottom-color: #e67e22;
+            background: #fff7ed;
+        }
+
+        .nav-link.active {
+            color: #e67e22;
+            border-bottom-color: #e67e22;
+            background: #fff7ed;
+        }
+
+        /* Market Size Section */
+        .market-size {
+            background: linear-gradient(135deg, #f8fafc 0%, #e6f3ff 100%);
+            padding: 35px 30px;
+            position: relative;
+            overflow: hidden;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .market-size::before {
+            content: '';
+            position: absolute;
+            top: -15%;
+            right: -8%;
+            width: 150px;
+            height: 150px;
+            background: rgba(230, 126, 34, 0.1);
+            border-radius: 50%;
+            transform: rotate(45deg);
+        }
+
+        .market-size-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 1.9rem;
+            color: #1e3a5f;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .section-subtitle {
+            font-size: 0.95rem;
+            color: #666;
+            opacity: 0.8;
+        }
+
+        .market-overview {
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 25px;
+            border-left: 6px solid #e67e22;
+        }
+
+        .overview-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .overview-title {
+            font-size: 1.4rem;
+            color: #1e3a5f;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .overview-description {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .overview-description strong {
+            color: #1e3a5f;
+            font-weight: 700;
+        }
+
+        .key-metrics {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .metric-box {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+            color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.2s ease;
+        }
+
+        .metric-box:hover {
+            transform: translateY(-2px);
+        }
+
+        .metric-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 30px;
+            height: 30px;
+            background: rgba(230, 126, 34, 0.3);
+            border-radius: 50%;
+            transform: translate(10px, -10px);
+        }
+
+        .metric-box .metric-value {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: #e67e22;
+        }
+
+        .metric-box .metric-label {
+            font-size: 0.8rem;
+            opacity: 0.9;
+            font-weight: 500;
+            color: white;
+        }
+
+        .driving-factors {
+            margin-bottom: 25px;
+        }
+
+        .factors-title {
+            font-size: 1.5rem;
+            color: #1e3a5f;
+            font-weight: 600;
+            margin-bottom: 18px;
+            text-align: center;
+        }
+
+        .driving-factors .factors-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .factor-card {
+            background: #fff;
+            padding: 18px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease;
+            border: 1px solid #e2e8f0;
+        }
+
+        .factor-card:hover {
+            transform: translateY(-2px);
+            border-color: #e67e22;
+        }
+
+        .factor-icon {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .factor-card .factor-title {
+            font-size: 1rem;
+            color: #1e3a5f;
+            font-weight: 600;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+
+        .factor-description {
+            font-size: 0.85rem;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .market-evolution {
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-top: 6px solid #27ae60;
+        }
+
+        .evolution-title {
+            font-size: 1.5rem;
+            color: #1e3a5f;
+            font-weight: 600;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .timeline-container {
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .timeline-container::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, #e67e22, #27ae60);
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 25px;
+            padding-left: 25px;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -7px;
+            top: 6px;
+            width: 12px;
+            height: 12px;
+            background: #fff;
+            border: 3px solid #e67e22;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .timeline-item.current::before {
+            background: #e67e22;
+            border-color: #e67e22;
+        }
+
+        .timeline-period {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #e67e22;
+            margin-bottom: 4px;
+        }
+
+        .timeline-title {
+            font-size: 1.1rem;
+            color: #1e3a5f;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .timeline-content {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 6px;
+            border-left: 3px solid #e67e22;
+        }
+
+        .timeline-points {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .timeline-points li {
+            margin-bottom: 6px;
+            padding-left: 15px;
+            position: relative;
+            font-size: 0.8rem;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        .timeline-points li:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-points li::before {
+            content: '▶';
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-size: 0.7rem;
+        }
+
+        .timeline-points strong {
+            color: #1e3a5f;
+            font-weight: 600;
+        }
+
+        /* Future Outlook Section */
+        .future-outlook {
+            background: linear-gradient(135deg, #f8fafc 0%, #e6f3ff 100%);
+            padding: 35px 30px;
+            position: relative;
+            overflow: hidden;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .future-outlook::before {
+            content: '';
+            position: absolute;
+            bottom: -15%;
+            right: -8%;
+            width: 150px;
+            height: 150px;
+            background: rgba(39, 174, 96, 0.1);
+            border-radius: 50%;
+            transform: rotate(-45deg);
+        }
+
+        .outlook-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .outlook-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .outlook-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease;
+            border: 1px solid #e2e8f0;
+        }
+
+        .outlook-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .trends-card {
+            border-top: 6px solid #3498db;
+        }
+
+        .opportunities-card {
+            border-top: 6px solid #27ae60;
+        }
+
+        .restraints-card {
+            border-top: 6px solid #e74c3c;
+        }
+
+        .card-header {
+            padding: 20px 25px 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+
+        .card-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+        .trends-icon {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+        }
+
+        .opportunities-icon {
+            background: linear-gradient(135deg, #27ae60, #229954);
+        }
+
+        .restraints-icon {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+        }
+
+
+        .card-title {
+            font-size: 1.3rem;
+            color: #1e3a5f;
+            font-weight: 600;
+        }
+
+        .card-content {
+            padding: 0 25px 25px;
+        }
+
+        .content-description {
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .content-description strong {
+            color: #1e3a5f;
+            font-weight: 600;
+        }
+
+        .trend-highlights {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .highlight-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 12px;
+            background: #f8fafc;
+            border-radius: 8px;
+            border-left: 3px solid #3498db;
+        }
+
+        .highlight-icon {
+            font-size: 1.2rem;
+            margin-top: 2px;
+        }
+
+        .highlight-text {
+            font-size: 0.85rem;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        .highlight-text strong {
+            color: #1e3a5f;
+            font-weight: 600;
+        }
+
+        .opportunity-focus {
+            margin-bottom: 20px;
+        }
+
+        .focus-title {
+            font-size: 1.1rem;
+            color: #27ae60;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .focus-description {
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .focus-description strong {
+            color: #1e3a5f;
+            font-weight: 600;
+        }
+
+        .opportunity-drivers {
+            margin-bottom: 20px;
+        }
+
+        .driver-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 12px;
+            margin-bottom: 6px;
+            background: #f6ffed;
+            border-radius: 6px;
+            border-left: 3px solid #27ae60;
+        }
+
+        .driver-label {
+            font-size: 0.85rem;
+            color: #555;
+            font-weight: 500;
+        }
+
+        .driver-impact {
+            font-size: 0.75rem;
+            padding: 3px 8px;
+            border-radius: 10px;
+            font-weight: 600;
+            background: #27ae60;
+            color: #fff;
+        }
+
+        .driver-item:nth-child(3) .driver-impact,
+        .driver-item:nth-child(4) .driver-impact {
+            background: #f39c12;
+            color: #fff;
+        }
+
+        .key-requirements {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 3px solid #27ae60;
+        }
+
+        .requirements-title {
+            font-size: 0.9rem;
+            color: #27ae60;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .requirements-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .requirements-list li {
+            font-size: 0.8rem;
+            color: #555;
+            padding: 3px 0;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .requirements-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        .restraint-focus {
+            margin-bottom: 20px;
+        }
+
+        .restraint-focus .focus-title {
+            color: #e74c3c;
+        }
+
+        .challenge-areas {
+            margin-bottom: 20px;
+        }
+
+        .challenge-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 10px;
+            margin-bottom: 8px;
+            background: #fff2f0;
+            border-radius: 6px;
+            border-left: 3px solid #e74c3c;
+        }
+
+        .challenge-icon {
+            font-size: 1.1rem;
+            margin-top: 2px;
+        }
+
+        .challenge-content {
+            font-size: 0.85rem;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        .challenge-content strong {
+            color: #e74c3c;
+            font-weight: 600;
+        }
+
+        .mitigation-strategies {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 3px solid #e74c3c;
+        }
+
+        .strategies-title {
+            font-size: 0.9rem;
+            color: #e74c3c;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .strategy-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .strategy-chip {
+            background: #e74c3c;
+            color: #fff;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+        }
+
+        .strategy-chip:hover {
+            background: #c0392b;
+        }
+
+        /* Segmental Analysis Section */
+        .segmental-analysis {
+            background: linear-gradient(135deg, #f8fafc 0%, #e6f3ff 100%);
+            padding: 35px 30px;
+            position: relative;
+            overflow: hidden;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .segmental-analysis::before {
+            content: '';
+            position: absolute;
+            top: -15%;
+            left: -8%;
+            width: 150px;
+            height: 150px;
+            background: rgba(52, 152, 219, 0.1);
+            border-radius: 50%;
+            transform: rotate(45deg);
+        }
+
+        .segmental-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .segments-overview {
+            margin-bottom: 30px;
+        }
+
+        .overview-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+            border-top: 6px solid #3498db;
+        }
+
+        .overview-header {
+            padding: 20px 25px 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: #f8fafc;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .overview-icon {
+            font-size: 2rem;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: #fff;
+        }
+
+        .overview-title {
+            font-size: 1.4rem;
+            color: #1e3a5f;
+            font-weight: 600;
+        }
+
+        .overview-description {
+            padding: 25px;
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .overview-description strong {
+            color: #1e3a5f;
+            font-weight: 600;
+        }
+
+        .segment-category {
+            margin-bottom: 35px;
+        }
+
+        .category-header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .category-title {
+            font-size: 1.6rem;
+            color: #1e3a5f;
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .category-icon {
+            font-size: 1.8rem;
+        }
+
+        .category-subtitle {
+            font-size: 0.9rem;
+            color: #666;
+            opacity: 0.8;
+        }
+
+        .segment-leaders {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .leader-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+            transition: transform 0.2s ease;
+        }
+
+        .leader-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .leader-card.largest {
+            border-top: 6px solid #27ae60;
+        }
+
+        .leader-card.fastest {
+            border-top: 6px solid #e74c3c;
+        }
+
+        .leader-header {
+            padding: 20px 25px 15px;
+            background: #f8fafc;
+            border-bottom: 1px solid #e2e8f0;
+            text-align: center;
+        }
+
+        .leader-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+        }
+
+        .largest-badge {
+            background: #27ae60;
+            color: #fff;
+        }
+
+        .fastest-badge {
+            background: #e74c3c;
+            color: #fff;
+        }
+
+        .leader-title {
+            font-size: 1.2rem;
+            color: #1e3a5f;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .leader-status {
+            font-size: 0.8rem;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .leader-content {
+            padding: 20px 25px 25px;
+        }
+
+        .market-statement {
+            background: #e6f3ff;
+            padding: 12px;
+            border-radius: 6px;
+            border-left: 3px solid #3498db;
+            margin-bottom: 15px;
+        }
+
+        .statement-text {
+            font-size: 0.9rem;
+            color: #1e3a5f;
+            font-weight: 600;
+            line-height: 1.4;
+            margin: 0;
+        }
+
+        .driver-points {
+            margin-bottom: 20px;
+        }
+
+        .point-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 12px;
+            padding: 12px;
+            background: #f8fafc;
+            border-radius: 8px;
+            border-left: 3px solid #3498db;
+        }
+
+        .point-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .point-icon {
+            font-size: 1.2rem;
+            margin-top: 2px;
+        }
+
+        .point-text {
+            font-size: 0.85rem;
+            color: #555;
+            line-height: 1.4;
+            flex: 1;
+        }
+
+        .market-example {
+            background: #e6f3ff;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+
+        .example-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: #1e3a5f;
+        }
+
+        .example-icon {
+            font-size: 1rem;
+        }
+
+        .example-text {
+            font-size: 0.85rem;
+            color: #555;
+            line-height: 1.4;
+            margin: 0;
+        }
+
+        .market-conclusion {
+            background: #f0f9f3;
+            padding: 12px;
+            border-radius: 6px;
+            border-left: 3px solid #27ae60;
+            margin-top: 15px;
+        }
+
+        .conclusion-text {
+            font-size: 0.85rem;
+            color: #555;
+            line-height: 1.4;
+            margin: 0;
+        }
+
+        .conclusion-text strong {
+            color: #27ae60;
+            font-weight: 600;
+        }
+
+        .segmental-insights {
+            margin-top: 30px;
+        }
+
+        .insights-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+            border-top: 6px solid #f39c12;
+        }
+
+        .insights-header {
+            padding: 20px 25px 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: #f8fafc;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .insights-icon {
+            font-size: 1.8rem;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+            color: #fff;
+        }
+
+        .insights-title {
+            font-size: 1.3rem;
+            color: #1e3a5f;
+            font-weight: 600;
+        }
+
+        .insights-grid {
+            padding: 25px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .insight-item {
+            padding: 15px;
+            background: #f8fafc;
+            border-radius: 8px;
+            border-left: 4px solid #f39c12;
+            transition: transform 0.2s ease;
+        }
+
+        .insight-item:hover {
+            transform: translateX(3px);
+        }
+
+        .insight-label {
+            font-size: 0.9rem;
+            color: #f39c12;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .insight-description {
+            font-size: 0.8rem;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        /* Competitive Analysis Section */
+        .competitive-analysis {
+            background: linear-gradient(135deg, #f8fafc 0%, #e6f3ff 100%);
+            padding: 35px 30px;
+            position: relative;
+            overflow: hidden;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .competitive-analysis::before {
+            content: '';
+            position: absolute;
+            top: -15%;
+            left: -8%;
+            width: 150px;
+            height: 150px;
+            background: rgba(231, 76, 60, 0.1);
+            border-radius: 50%;
+            transform: rotate(45deg);
+        }
+
+        .analysis-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .analysis-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 25px;
+        }
+
+        .players-section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .players-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease;
+            border: 1px solid #e2e8f0;
+            border-top: 6px solid #1e3a5f;
+            flex: 1;
+        }
+
+        .players-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .players-icon {
+            background: linear-gradient(135deg, #1e3a5f, #2c5282);
+        }
+
+        .players-intro {
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .players-categories {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .category-group {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #e67e22;
+        }
+
+        .category-title {
+            font-size: 1rem;
+            color: #1e3a5f;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .players-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 3fr);
+            gap: 10px;
+        }
+
+        .player-card {
+            background: #fff;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+            transition: transform 0.2s ease;
+        }
+
+        .player-card:hover {
+            transform: translateY(-2px);
+            border-color: #e67e22;
+        }
+
+        .player-card.customer {
+            border-left: 3px solid #3498db;
+        }
+
+        .player-card.defense {
+            border-left: 3px solid #e74c3c;
+        }
+
+        .player-card .player-name {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #1e3a5f;
+            margin-bottom: 3px;
+        }
+
+        .player-location {
+            font-size: 0.7rem;
+            color: #e67e22;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+
+        .player-role {
+            font-size: 0.7rem;
+            color: #666;
+            line-height: 1.2;
+        }
+
+        .collaboration-note {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            background: #e6f3ff;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+            margin-top: 20px;
+        }
+
+        .note-icon {
+            font-size: 1.2rem;
+            margin-top: 2px;
+        }
+
+        .note-content {
+            font-size: 0.85rem;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        .note-content strong {
+            color: #1e3a5f;
+            font-weight: 600;
+        }
+
+        .porters-section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .porters-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease;
+            border: 1px solid #e2e8f0;
+            border-top: 6px solid #e74c3c;
+            flex: 1;
+        }
+
+        .porters-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .porters-icon {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+        }
+
+        .porters-intro {
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .forces-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .force-item {
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: transform 0.2s ease;
+        }
+
+        .force-item:hover {
+            transform: translateX(3px);
+        }
+
+        .force-item.low {
+            background: #f6ffed;
+            border-left: 4px solid #52c41a;
+        }
+
+        .force-item.medium {
+            background: #fff7e6;
+            border-left: 4px solid #fa8c16;
+        }
+
+        .force-item.high {
+            background: #fff2f0;
+            border-left: 4px solid #ff4d4f;
+        }
+
+        .force-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .force-icon {
+            font-size: 1.1rem;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .force-info {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .force-name {
+            font-size: 0.9rem;
+            color: #1e3a5f;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .force-level {
+            font-size: 0.7rem;
+            padding: 3px 8px;
+            border-radius: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        .force-level.low {
+            background: #52c41a;
+            color: #fff;
+        }
+
+        .force-level.medium {
+            background: #fa8c16;
+            color: #fff;
+        }
+
+        .force-level.high {
+            background: #ff4d4f;
+            color: #fff;
+        }
+
+        .force-description {
+            font-size: 0.8rem;
+            color: #555;
+            line-height: 1.4;
+            margin: 0;
+        }
+
+        .market-outlook {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            background: #f0f9f3;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #27ae60;
+            margin-top: 20px;
+        }
+
+        .outlook-icon {
+            font-size: 1.2rem;
+            margin-top: 2px;
+        }
+
+        .outlook-content {
+            font-size: 0.85rem;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        /*.outlook-content strong {
+            color: #27ae60;
+            font-weight: 600;
+        }*/
+
+        /* Regional Analysis Section */
+        .regional-analysis {
+            background: linear-gradient(135deg, #f8fafc 0%, #e6f3ff 100%);
+            padding: 35px 30px;
+            position: relative;
+            overflow: hidden;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .regional-analysis::before {
+            content: '';
+            position: absolute;
+            top: -15%;
+            right: -8%;
+            width: 150px;
+            height: 150px;
+            background: rgba(52, 152, 219, 0.1);
+            border-radius: 50%;
+            transform: rotate(45deg);
+        }
+
+        .regional-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .regions-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .region-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease;
+            border: 1px solid #e2e8f0;
+        }
+
+        .region-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .region-card.north-america {
+            border-top: 6px solid #3498db;
+        }
+
+        .region-card.asia-pacific {
+            border-top: 6px solid #e74c3c;
+        }
+
+        .region-card.europe {
+            border-top: 6px solid #27ae60;
+        }
+
+        .region-card.latin-america {
+            border-top: 6px solid #f39c12;
+        }
+
+        .region-card.mea {
+            border-top: 6px solid #9b59b6;
+        }
+
+        .region-header {
+            padding: 20px 25px 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: #f8fafc;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .region-flag {
+            font-size: 2rem;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .region-info {
+            flex: 1;
+        }
+
+        .region-name {
+            font-size: 1.3rem;
+            color: #1e3a5f;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .growth-status {
+            font-size: 0.75rem;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        .growth-status.prominent {
+            background: #3498db;
+            color: #fff;
+        }
+
+        .growth-status.fastest {
+            background: #e74c3c;
+            color: #fff;
+        }
+
+        .growth-status.significant {
+            background: #27ae60;
+            color: #fff;
+        }
+
+        .growth-status.considerable {
+            background: #f39c12;
+            color: #fff;
+        }
+
+        .growth-status.faster {
+            background: #9b59b6;
+            color: #fff;
+        }
+
+        .region-content {
+            padding: 20px 25px 25px;
+        }
+
+        .region-description {
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 18px;
+        }
+
+        .region-description strong {
+            color: #1e3a5f;
+            font-weight: 600;
+        }
+
+        .key-drivers {
+            margin-bottom: 15px;
+        }
+
+        .drivers-title {
+            font-size: 0.9rem;
+            color: #1e3a5f;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .drivers-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .drivers-list li {
+            font-size: 0.8rem;
+            color: #666;
+            padding: 3px 0;
+            padding-left: 15px;
+            position: relative;
+            line-height: 1.3;
+        }
+
+        .drivers-list li::before {
+            content: '▶';
+            position: absolute;
+            left: 0;
+            color: #e67e22;
+            font-size: 0.7rem;
+        }
+
+        .market-focus {
+            background: #f0f9f3;
+            padding: 12px;
+            border-radius: 6px;
+            border-left: 3px solid #27ae60;
+            font-size: 0.85rem;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        .market-focus strong {
+            color: #27ae60;
+            font-weight: 600;
+        }
+
+        .regional-summary {
+            margin-top: 25px;
+        }
+
+        .summary-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+            border-top: 6px solid #1e3a5f;
+        }
+
+        .summary-header {
+            padding: 20px 25px 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: #f8fafc;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .summary-icon {
+            font-size: 2rem;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #1e3a5f, #2c5282);
+            color: #fff;
+        }
+
+        .summary-title {
+            font-size: 1.4rem;
+            color: #1e3a5f;
+            font-weight: 600;
+        }
+
+        .summary-content {
+            padding: 25px;
+        }
+
+        .growth-trends {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .trend-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            background: #f8fafc;
+            border-radius: 6px;
+            border-left: 3px solid #e67e22;
+        }
+
+        .trend-label {
+            font-size: 0.85rem;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .trend-value {
+            font-size: 0.85rem;
+            color: #1e3a5f;
+            font-weight: 600;
+        }
+
+        .key-insights {
+            background: #e6f3ff;
+            padding: 18px;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+
+        .insights-title {
+            font-size: 1rem;
+            color: #1e3a5f;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .insights-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+
+        .insight-chip {
+            background: #3498db;
+            color: #fff;
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-align: center;
+            transition: background-color 0.2s ease;
+        }
+
+        .insight-chip:hover {
+            background: #2980b9;
+        }
+
+        /* Recent Industry Developments Section */
+        .industry-developments {
+            background: linear-gradient(135deg, #f8fafc 0%, #e6f3ff 100%);
+            padding: 35px 30px;
+            position: relative;
+            overflow: hidden;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .industry-developments::before {
+            content: '';
+            position: absolute;
+            bottom: -15%;
+            left: -8%;
+            width: 150px;
+            height: 150px;
+            background: rgba(230, 126, 34, 0.1);
+            border-radius: 50%;
+            transform: rotate(45deg);
+        }
+
+        .developments-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .developments-timeline {
+            margin-bottom: 30px;
+        }
+
+        .timeline-container-dev {
+            position: relative;
+            padding-left: 0;
+        }
+
+        .development-item {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+            align-items: flex-start;
+        }
+
+        .development-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .development-date {
+            flex-shrink: 0;
+            width: 120px;
+        }
+
+        .date-badge {
+            background: linear-gradient(135deg, #e67e22, #d35400);
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(230, 126, 34, 0.3);
+        }
+
+        .development-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+            transition: transform 0.2s ease;
+            flex: 1;
+        }
+
+        .development-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .development-header {
+            padding: 20px 25px 15px;
+            background: #f8fafc;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .company-info {
+            flex: 1;
+        }
+
+        .company-name {
+            font-size: 1.3rem;
+            color: #1e3a5f;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .company-description {
+            font-size: 0.85rem;
+            color: #666;
+            opacity: 0.8;
+        }
+
+        .development-content {
+            padding: 20px 25px 25px;
+        }
+
+        .development-description {
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+
+
+        /* Focus indicators */
+        *:focus {
+            outline: 2px solid #e67e22;
+            outline-offset: 2px;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background: linear-gradient(135deg, #f8fafc 0%, #e6f3ff 100%);
+            padding: 35px 30px;
+            position: relative;
+            overflow: hidden;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .faq-section::before {
+            content: '';
+            position: absolute;
+            top: -15%;
+            right: -8%;
+            width: 150px;
+            height: 150px;
+            background: rgba(39, 174, 96, 0.1);
+            border-radius: 50%;
+            transform: rotate(45deg);
+        }
+
+        .faq-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .faq-category {
+            margin-bottom: 30px;
+        }
+
+        .faq-category:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-category .category-header {
+            margin-bottom: 20px;
+        }
+
+        .faq-category .category-title {
+            font-size: 1.5rem;
+            color: #1e3a5f;
+            font-weight: 600;
+            padding: 15px 0;
+            border-bottom: 3px solid #e67e22;
+            display: inline-block;
+        }
+
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .faq-item {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e2e8f0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+        }
+
+        .faq-question {
+            padding: 20px 25px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f8fafc;
+            border-bottom: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: #e6f3ff;
+        }
+
+        .faq-item.active .faq-question {
+            background: #e6f3ff;
+            border-bottom-color: #3498db;
+        }
+
+        .question-text {
+            font-size: 1rem;
+            color: #1e3a5f;
+            font-weight: 600;
+            line-height: 1.4;
+            flex: 1;
+            margin-right: 15px;
+        }
+
+        .question-icon {
+            font-size: 1.5rem;
+            color: #e67e22;
+            font-weight: bold;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item.active .question-icon {
+            background: #e67e22;
+            color: #fff;
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            padding: 20px 25px;
+        }
+
+        .faq-answer p {
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .faq-answer p strong {
+            color: #e67e22;
+            font-weight: 600;
+        }
+
+
+        /* Related Reports Section */
+        .related-reports {
+            background: linear-gradient(135deg, #f8fafc 0%, #e6f3ff 100%);
+            padding: 35px 30px;
+            position: relative;
+            overflow: hidden;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .related-reports::before {
+            content: '';
+            position: absolute;
+            bottom: -15%;
+            right: -8%;
+            width: 150px;
+            height: 150px;
+            background: rgba(52, 152, 219, 0.1);
+            border-radius: 50%;
+            transform: rotate(-45deg);
+        }
+
+        .related-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .reports-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .report-card-simple {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e2e8f0;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.2s ease;
+        }
+
+        .report-card-simple:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+        }
+
+        .report-info {
+            flex: 1;
+        }
+
+        .report-name {
+            font-size: 1.1rem;
+            color: #1e3a5f;
+            font-weight: 600;
+            margin-bottom: 5px;
+            line-height: 1.3;
+        }
+
+        .report-date {
+            font-size: 0.8rem;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .view-btn {
+            background: #3498db;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            margin-left: 15px;
+        }
+
+        .view-btn:hover {
+            background: #2980b9;
+            transform: translateY(-1px);
+        }
+
+        /* Related Blogs & News Section */
+        .related-blogs {
+            background: linear-gradient(135deg, #f8fafc 0%, #e6f3ff 100%);
+            padding: 35px 30px;
+            position: relative;
+            overflow: hidden;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .related-blogs::before {
+            content: '';
+            position: absolute;
+            top: -15%;
+            left: -8%;
+            width: 150px;
+            height: 150px;
+            background: rgba(39, 174, 96, 0.1);
+            border-radius: 50%;
+            transform: rotate(45deg);
+        }
+
+        .blogs-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .blogs-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .blog-card-simple {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e2e8f0;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.2s ease;
+        }
+
+        .blog-card-simple:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+        }
+
+        .blog-info {
+            flex: 1;
+        }
+
+        .blog-title {
+            font-size: 1.1rem;
+            color: #1e3a5f;
+            font-weight: 600;
+            margin-bottom: 5px;
+            line-height: 1.3;
+        }
+
+        .blog-date {
+            font-size: 0.8rem;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .blog-card-simple .view-btn {
+            background: #27ae60;
+            margin-left: 15px;
+        }
+
+        .blog-card-simple .view-btn:hover {
+            background: #229954;
+            transform: translateY(-1px);
+        }
+
+        /* Print styles */
+        @media print {
+            .report-container {
+                box-shadow: none;
+                margin: 0;
+            }
+
+            .btn {
+                display: none;
+            }
+        }
+
+        /* Reduce motion for accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .report-container {
+                margin: 0 5px;
+            }
+
+            .header-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .action-buttons {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .snapshot-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .overview-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .driving-factors .factors-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .outlook-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .analysis-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .segment-leaders {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .insights-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .category-title {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .insights-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .industry-developments {
+                padding: 25px 15px;
+            }
+
+            .development-item {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .development-date {
+                width: 100%;
+            }
+
+            .development-header {
+                padding: 15px 20px 12px;
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+
+            .development-content {
+                padding: 15px 20px 20px;
+            }
+
+            .impact-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .impact-summary .summary-header {
+                padding: 15px 20px 12px;
+                flex-direction: column;
+                text-align: center;
+                gap: 8px;
+            }
+
+            .impact-summary .summary-content {
+                padding: 20px;
+            }
+
+            .insights-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .industry-developments {
+                padding: 25px 15px;
+            }
+
+            .developments-list {
+                padding: 20px;
+            }
+
+            .development-item-simple {
+                gap: 10px;
+            }
+
+            .faq-section {
+                padding: 25px 15px;
+            }
+
+            .faq-list {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .faq-category .category-title {
+                font-size: 1.3rem;
+            }
+
+            .faq-question {
+                padding: 15px 20px;
+            }
+
+            .faq-item.active .faq-answer {
+                padding: 15px 20px;
+            }
+
+            .related-reports {
+                padding: 25px 15px;
+            }
+
+            .reports-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+
+            .report-card-simple {
+                padding: 15px;
+            }
+
+            .regions-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .related-blogs {
+                padding: 25px 15px;
+            }
+
+            .blogs-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+
+            .blog-card-simple {
+                padding: 15px;
+            }
+
+            .key-metrics {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .metric-box {
+                flex: 1;
+                margin: 0 4px;
+            }
+
+            .players-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .growth-trends {
+                grid-template-columns: 1fr;
+            }
+
+            .insights-grid {
+                grid-template-columns: 1fr;
+            }
+            .report-navbar{
+                display:none;
+            }
+            
+        }
+
+        @media (max-width: 768px) {
+            .report-container {
+                margin: 0;
+                border-radius: 0;
+            }
+
+            .report-header,
+            .market-snapshot,
+            .market-size,
+            .future-outlook,
+            .segmental-analysis,
+            .competitive-analysis,
+            .regional-analysis {
+                padding: 25px 15px;
+            }
+
+            .header-left h1 {
+                font-size: 1.8rem;
+            }
+
+            .meta-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .segments-grid,
+            .trends-list {
+                grid-template-columns: 1fr;
+            }
+
+            .players-grid {
+                flex-direction: column;
+                gap: 6px;
+            }
+
+            .player-item {
+                max-width: none;
+                min-width: auto;
+            }
+
+            .key-metrics {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .report-navbar{
+                display:none;
+            }
+            
+
+            .metric-box {
+                margin: 0;
+            }
+
+            .card-header {
+                padding: 15px 20px 0;
+                flex-direction: column;
+                text-align: center;
+                gap: 8px;
+            }
+
+            .card-content {
+                padding: 0 20px 20px;
+            }
+
+            .force-info {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+
+            .region-header {
+                padding: 15px 20px 12px;
+                flex-direction: column;
+                text-align: center;
+                gap: 8px;
+            }
+
+            .region-content {
+                padding: 15px 20px 20px;
+            }
+
+            .summary-header {
+                padding: 15px 20px 12px;
+                flex-direction: column;
+                text-align: center;
+                gap: 8px;
+            }
+
+            .summary-content {
+                padding: 20px;
+            }
+
+            .trend-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+
+            .strategy-chips {
+                flex-direction: column;
+            }
+
+            .strategy-chip {
+                text-align: center;
+            }
+
+            .segmental-analysis {
+                padding: 25px 15px;
+            }
+
+            .segment-leaders {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .leader-header {
+                padding: 15px 20px 12px;
+            }
+
+            .leader-content {
+                padding: 15px 20px 20px;
+            }
+
+            .insights-grid {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+
+            .category-title {
+                font-size: 1.4rem;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .overview-header {
+                padding: 15px 20px 12px;
+                flex-direction: column;
+                text-align: center;
+                gap: 8px;
+            }
+
+            .overview-description {
+                padding: 20px;
+            }
+
+            .insights-header {
+                padding: 15px 20px 12px;
+                flex-direction: column;
+                text-align: center;
+                gap: 8px;
+            }
+
+            .players-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .reports-grid {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .blogs-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+        }
+
+        /* Print styles */
+        @media print {
+            .report-container {
+                box-shadow: none;
+                margin: 0;
+            }
+
+            .btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <div class="report-container">
+        <!-- Report Header -->
+        <header class="report-header" role="banner">
+            <div class="header-content">
+                <div class="header-left">
+                    <h1>Smart Home Technology Market Report 2025-2032</h1>
+                    <p class="subtitle">
+                        Comprehensive analysis of market trends, growth drivers, competitive landscape, and future
+                        opportunities across 30+ countries
+                    </p>
+
+                    <div class="meta-grid" role="list" aria-label="Report statistics">
+                        <div class="meta-item" role="listitem">
+                            <div class="meta-value">520+</div>
+                            <div class="meta-label">Pages</div>
+                        </div>
+                        <div class="meta-item" role="listitem">
+                            <div class="meta-value">30</div>
+                            <div class="meta-label">Countries</div>
+                        </div>
+                        <div class="meta-item" role="listitem">
+                            <div class="meta-value">500+</div>
+                            <div class="meta-label">Companies</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-right">
+                    <div class="action-buttons">
+                        <button class="btn btn-primary" aria-label="Download sample report">Download Sample</button>
+                        <button class="btn btn-secondary" aria-label="Purchase full report">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main id="main-content">
+            <!-- Market Snapshot Section -->
+            <section class="market-snapshot" aria-labelledby="snapshot-title">
+                <div class="snapshot-content">
+                    <div class="snapshot-header">
+                        <h2 id="snapshot-title">Market Snapshot</h2>
+                        <p class="snapshot-subtitle">Complete market overview with key insights and growth projections
+                        </p>
+                    </div>
+
+                    <div class="snapshot-grid">
+                        <div class="left-column">
+                            <div class="metric-group">
+                                <div class="metric-label">Base Year 2023</div>
+                                <div class="metric-value">$80.2B</div>
+                                <div class="metric-sub">Market Size</div>
+                            </div>
+
+                            <div class="metric-group">
+                                <div class="metric-label">CAGR 2023-2032</div>
+                                <div class="metric-value">26.8%</div>
+                                <div class="metric-sub">Annual Growth</div>
+                            </div>
+
+                            <div class="metric-group">
+                                <div class="metric-label">Forecast 2032</div>
+                                <div class="metric-value">$537B</div>
+                                <div class="metric-sub">Projected Size</div>
+                            </div>
+                        </div>
+
+                        <div class="center-column">
+                            <div class="segments-panel">
+                                <h3 class="panel-title">Market Segments</h3>
+                                <div class="segments-grid">
+                                    <div class="segment-item">
+                                        <div class="segment-name">By Product Type</div>
+
+                                        <div class="subsegments">
+                                            <ul>
+                                                <li>Video Surveillance</li>
+                                                <li>Access Control</li>
+                                                <li>Alarms</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="segment-item">
+                                        <div class="segment-name">By Application </div>
+
+                                        <div class="subsegments">
+                                            <ul>
+                                                <li>LED Blubs</li>
+                                                <li>Smart Switches </li>
+                                                <li>Dimmers</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="segment-item">
+                                        <div class="segment-name">By End User</div>
+
+                                        <div class="subsegments">
+                                            <ul>
+                                                <li>Commercial </li>
+                                                <li>Residential</li>
+                                                <li>Industrial</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="players-panel">
+                                <h3 class="panel-title">Key Players</h3>
+                                <div class="players-grid-panel">
+                                    <div class="player-item">
+                                        <div class="player-name">Amazon</div>
+                                        <div class="player-share">18.2%</div>
+                                    </div>
+                                    <div class="player-item">
+                                        <div class="player-name">Google</div>
+                                        <div class="player-share">15.7%</div>
+                                    </div>
+                                    <div class="player-item">
+                                        <div class="player-name">Apple</div>
+                                        <div class="player-share">12.3%</div>
+                                    </div>
+                                    <div class="player-item">
+                                        <div class="player-name">Samsung</div>
+                                        <div class="player-share">11.8%</div>
+                                    </div>
+                                    <div class="player-item">
+                                        <div class="player-name">ekey player 1</div>
+                                        <div class="player-share">51.8%</div>
+                                    </div>
+                                    <div class="player-item">
+                                        <div class="player-name">key player 2</div>
+                                        <div class="player-share">65.8%</div>
+                                    </div>
+                                    <div class="player-item">
+                                        <div class="player-name">key player 3</div>
+                                        <div class="player-share">32.8%</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right-column">
+                            <div class="factors-panel">
+                                <h3 class="panel-title"> Market Dynamics</h3>
+                                <div class="factors-grid">
+                                    <div class="factor-section drivers">
+                                        <div class="factor-title drivers">Drivers</div>
+                                        <ul class="factor-list">
+                                            <li>Energy efficiency demand</li>
+                                            <li>Smartphone adoption</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="factor-section restraints">
+                                        <div class="factor-title restraints">Restraints</div>
+                                        <ul class="factor-list">
+                                            <li>High installation costs</li>
+                                            <li>Privacy concerns</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="factor-section opportunities">
+                                        <div class="factor-title opportunities">Opportunities</div>
+                                        <ul class="factor-list">
+                                            <li>Emerging markets</li>
+                                            <li>Renewable integration</li>
+                                        </ul>
+                                    </div>
+                                    <div class="factor-section trends">
+                                        <div class="factor-title trends">Trends</div>
+                                        <ul class="factor-list">
+                                            <li>AI Integration</li>
+                                            <li>Voice Control</li>
+                                            <li>Energy Management</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+           <!-- Navigation Bar -->
+            <nav class="report-navbar" id="reportNavbar">
+                <div class="navbar-container">
+                    <div class="navbar-content">
+                        <a href="#market-size-title" class="nav-link">Size</a>
+                        <a href="#outlook-title" class="nav-link">Future Outlook</a>
+                        <a href="#segmental-title" class="nav-link">Segmentation Analysis</a>
+                        <a href="#competitive-title" class="nav-link">Competitive Analysis</a>
+                        <a href="#regional-title" class="nav-link">Regional Analysis</a>
+                        <a href="#developments-title" class="nav-link">Recent Developments</a>
+                        <a href="#faq-title" class="nav-link">FAQs</a>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Market Size Section -->
+            <section class="market-size" id="market-size-title">
+                <div class="market-size-content">
+                    <div class="section-header">
+                        <h2 id="market-size-title">Market Size</h2>
+                        <p class="section-subtitle">Comprehensive market valuation and growth trajectory analysis</p>
+                    </div>
+
+                    <div class="market-overview">
+                        <div class="overview-content">
+                            <div class="overview-left">
+                                <h3 class="overview-title">Market Size Overview</h3>
+                                <p class="overview-description">
+                                    The global <strong>endoscopy equipment market</strong> was valued at <strong>USD
+                                        33.7 billion in 2024</strong> and is projected to reach <strong>USD 53.6 billion
+                                        by 2033</strong>, growing at a <strong>CAGR of 5.3%</strong> from 2025 to 2033.
+                                    The market's growth is being fueled by rising demand for minimally invasive
+                                    procedures, technological innovations in imaging, an aging global population, and
+                                    increased prevalence of gastrointestinal and colorectal diseases.
+                                </p>
+                            </div>
+                            <div class="overview-right">
+                                <div class="key-metrics">
+                                    <div class="metric-box">
+                                        <div class="metric-value">$33.7B</div>
+                                        <div class="metric-label">2024 Market Value</div>
+                                    </div>
+                                    <div class="metric-box">
+                                        <div class="metric-value">$53.6B</div>
+                                        <div class="metric-label">2033 Projection</div>
+                                    </div>
+                                    <div class="metric-box">
+                                        <div class="metric-value">5.3%</div>
+                                        <div class="metric-label">CAGR 2025-2033</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="driving-factors">
+                        <h3 class="factors-title">Driving Factors Justifying the 2024 Market Size</h3>
+                        <div class="factors-grid">
+                            <div class="factor-card">
+
+                                <h4 class="factor-title">Rising Preference for Minimally Invasive Surgeries (MIS)</h4>
+                                <p class="factor-description">Endoscopic procedures offer reduced recovery time, lower
+                                    risk of infection, and minimal scarring. This has significantly boosted the adoption
+                                    of endoscopy across diagnostic and therapeutic procedures in 2024. Endoscopic
+                                    procedures offer reduced recovery time, lower risk of infection, and minimal
+                                    scarring. This has significantly boosted the adoption of endoscopy across diagnostic
+                                    and therapeutic procedures in 2024.</p>
+                            </div>
+                            <div class="factor-card">
+
+                                <h4 class="factor-title">Technological Advancements in Endoscopic Imaging</h4>
+                                <p class="factor-description">The integration of high-definition (HD), 4K, and 3D
+                                    imaging systems, along with AI-assisted navigation, has enhanced the precision and
+                                    safety of procedures, further supporting the market growth.Endoscopic procedures
+                                    offer reduced recovery time, lower
+                                    risk of infection, and minimal scarring. This has significantly boosted the adoption
+                                    of endoscopy across diagnostic and therapeutic procedures in 2024.</p>
+                            </div>
+                            <div class="factor-card">
+
+                                <h4 class="factor-title">Increased Prevalence of GI Disorders and Cancer</h4>
+                                <p class="factor-description">Gastrointestinal diseases, colorectal cancer, and
+                                    obesity-related conditions are driving the demand for routine endoscopic diagnostics
+                                    globally.Endoscopic procedures offer reduced recovery time, lower
+                                    risk of infection, and minimal scarring. This has significantly boosted the adoption
+                                    of endoscopy across diagnostic and therapeutic procedures in 2024.</p>
+                            </div>
+                            <div class="factor-card">
+
+                                <h4 class="factor-title">Healthcare Infrastructure Expansion in Emerging Economies</h4>
+                                <p class="factor-description">Countries in Asia-Pacific and Latin America are heavily
+                                    investing in hospital infrastructure and adopting modern surgical equipment,
+                                    contributing to the market's size in 2024.Endoscopic procedures offer reduced
+                                    recovery time, lower
+                                    risk of infection, and minimal scarring. This has significantly boosted the adoption
+                                    of endoscopy across diagnostic and therapeutic procedures in 2024.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="market-evolution"  aria-labelledby="market-evolution">
+                        <h3 class="evolution-title">Market Evolution by Timeline</h3>
+                        <div class="timeline-container">
+                            <div class="timeline-item">
+                                <div class="timeline-period">2019–2023</div>
+                                <div class="timeline-title">Post-Pandemic Recovery and Diagnostic Backlog</div>
+                                <div class="timeline-content">
+                                    <ul class="timeline-points">
+                                        <li><strong>Delayed Elective Procedures:</strong> The COVID-19 pandemic led to
+                                            the postponement of elective surgeries, including endoscopic diagnostics,
+                                            which caused a temporary dip in demand in 2020–2021.</li>
+                                        <li><strong>Rebound and Accelerated Adoption (2022–2023):</strong> As healthcare
+                                            systems resumed normal operations, the backlog of gastrointestinal and
+                                            respiratory diagnoses fueled strong growth.</li>
+                                        <li><strong>Increased Demand for Disposable Endoscopes:</strong> To reduce
+                                            infection risks, single-use endoscopes became more popular, especially in
+                                            outpatient settings.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item current">
+                                <div class="timeline-period">2024</div>
+                                <div class="timeline-title">Technological Integration and Market Maturity</div>
+                                <div class="timeline-content">
+                                    <ul class="timeline-points">
+                                        <li><strong>AI and Robotics Integration:</strong> AI-powered detection
+                                            algorithms and robotic-assisted endoscopy systems began entering clinical
+                                            use in tertiary hospitals, improving diagnostic accuracy.</li>
+                                        <li><strong>Growing Demand for Capsule Endoscopy:</strong> Non-invasive,
+                                            patient-friendly capsule endoscopies gained popularity for small intestine
+                                            and colon imaging.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-period">2025–2029</div>
+                                <div class="timeline-title">Expanding Access and Next-Gen Innovations</div>
+                                <div class="timeline-content">
+                                    <ul class="timeline-points">
+                                        <li><strong>Widespread Use of AI-Based Diagnostic Tools:</strong> Enhanced
+                                            decision support systems for identifying cancerous lesions and bleeding
+                                            sites will drive adoption.</li>
+                                        <li><strong>Cost Reduction and Miniaturization:</strong> Technological
+                                            improvements will make endoscopic systems more compact and affordable,
+                                            increasing penetration in secondary healthcare facilities.</li>
+                                        <li><strong>Growth of Ambulatory Surgical Centers (ASCs):</strong> ASCs will
+                                            emerge as key endoscopy service providers due to faster turnover and lower
+                                            costs.</li>
+                                        <li><strong>Tele-Endoscopy & Remote Consultations:</strong> Expansion of
+                                            telehealth platforms will allow remote diagnosis using endoscopic video
+                                            feeds, particularly in rural or under-served areas.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-period">2030–2033</div>
+                                <div class="timeline-title">Personalized Medicine & Smart Endoscopy</div>
+                                <div class="timeline-content">
+                                    <ul class="timeline-points">
+                                        <li><strong>Integration of Genomics and Endoscopy:</strong> Endoscopy systems
+                                            may be integrated with genomic data to support personalized cancer
+                                            diagnostics.</li>
+                                        <li><strong>AI-Powered Predictive Analytics:</strong> Algorithms will predict
+                                            patient outcomes and suggest real-time procedural recommendations.</li>
+                                        <li><strong>Expansion in Home-Based Diagnostics:</strong> Miniaturized,
+                                            user-friendly capsule endoscopes will enable self-administration,
+                                            particularly for chronic conditions.</li>
+                                        <li><strong>Sustainability and Recyclability Focus:</strong> Increasing
+                                            environmental regulations will drive the development of biodegradable or
+                                            reusable endoscopy tools with reduced environmental impact.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Future Outlook Section -->
+            <section class="future-outlook" id="outlook-title">
+                <div class="outlook-content">
+                    <div class="section-header">
+                        <h2 id="outlook-title">Future Market Outlook</h2>
+                        <p class="section-subtitle">Strategic insights into emerging trends, opportunities, and market
+                            challenges</p>
+                    </div>
+
+                    <div class="outlook-grid">
+                        <!-- Trends Column -->
+                        <div class="trends-column">
+                            <div class="outlook-card trends-card">
+                                <div class="card-header">
+                                    <div class="card-icon trends-icon" aria-hidden="true">🚀</div>
+                                    <h3 class="card-title">Technology Trends</h3>
+                                </div>
+                                <div class="card-content">
+                                    <p class="content-description">
+                                        <strong>Technological advancements in fastener manufacturing</strong> are
+                                        enhancing the quality and customization of these components. <strong>Artificial
+                                            intelligence</strong> is now being deployed in quality control processes for
+                                        aerospace fasteners, facilitating the identification of defects early and the
+                                        reduction of waste.
+                                    </p>
+                                    <div class="trend-highlights">
+                                        <div class="highlight-item">
+
+                                            <div class="highlight-text">
+                                                <strong>AI-Driven Quality Control:</strong> Early defect identification
+                                                and waste reduction
+                                            </div>
+                                        </div>
+                                        <div class="highlight-item">
+
+                                            <div class="highlight-text">
+                                                <strong>3D Printing:</strong> Streamlined lead times for custom designs
+                                            </div>
+                                        </div>
+                                        <div class="highlight-item">
+
+                                            <div class="highlight-text">
+                                                <strong>AI-Driven Robotics:</strong> Increased precision, reduced human
+                                                error
+                                            </div>
+                                        </div>
+                                        <div class="highlight-item">
+
+                                            <div class="highlight-text">
+                                                <strong>Urban Air Mobility:</strong> Demand for lightweight,
+                                                corrosion-resistant fasteners
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Opportunities Column -->
+                        <div class="opportunities-column">
+                            <div class="outlook-card opportunities-card">
+                                <div class="card-header">
+                                    <div class="card-icon opportunities-icon" aria-hidden="true">🌟</div>
+                                    <h3 class="card-title">Future Opportunities</h3>
+                                </div>
+                                <div class="card-content">
+                                    <div class="opportunity-focus">
+                                        <h4 class="focus-title">Commercial Space Exploration</h4>
+                                        <p class="focus-description">
+                                            The burgeoning frontier of <strong>commercial space exploration</strong>
+                                            presents an extraordinary opportunity for the aerospace fasteners market. As
+                                            private enterprises like <strong>SpaceX, Blue Origin, and Virgin
+                                                Galactic</strong> intensify efforts to deploy satellites, transport
+                                            cargo, and facilitate space tourism, the demand for mission-critical,
+                                            ultra-reliable fasteners is escalating.
+                                        </p>
+                                    </div>
+
+                                    <div class="opportunity-drivers">
+                                        <div class="driver-item">
+                                            <span class="driver-label">Space Tourism</span>
+                                            <span class="driver-impact">High Impact</span>
+                                        </div>
+                                        <div class="driver-item">
+                                            <span class="driver-label">Satellite Deployment</span>
+                                            <span class="driver-impact">High Impact</span>
+                                        </div>
+                                        <div class="driver-item">
+                                            <span class="driver-label">Nano/Micro Satellites</span>
+                                            <span class="driver-impact">Medium Impact</span>
+                                        </div>
+                                        <div class="driver-item">
+                                            <span class="driver-label">Defense Contracts</span>
+                                            <span class="driver-impact">Medium Impact</span>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Restraints Column -->
+                        <div class="restraints-column">
+                            <div class="outlook-card restraints-card">
+                                <div class="card-header">
+                                    <div class="card-icon restraints-icon" aria-hidden="true">⚠️</div>
+                                    <h3 class="card-title">Market Restraints</h3>
+                                </div>
+                                <div class="card-content">
+                                    <div class="restraint-focus">
+                                        <h4 class="focus-title">High Manufacturing Costs and Supply Chain Issues</h4>
+                                        <p class="focus-description">
+                                            Despite its promising growth trajectory, the aerospace fasteners market
+                                            faces challenges associated with <strong>high manufacturing costs</strong>
+                                            and <strong>supply chain disruptions</strong>. Manufacturing aerospace-grade
+                                            fasteners involves substantial investment in materials like <strong>titanium
+                                                and Inconel</strong> and advanced machining technologies.Manufacturing aerospace-grade
+                                            fasteners involves substantial investment in materials like.
+                                        </p>
+                                    </div>
+
+                                    <div class="challenge-areas">
+                                        <div class="challenge-item">
+
+                                            <div class="challenge-content">
+                                                <strong>High Material Costs:</strong> Titanium and Inconel investments
+                                                strain SME budgets
+                                            </div>
+                                        </div>
+                                        <div class="challenge-item">
+
+                                            <div class="challenge-content">
+                                                <strong>Geopolitical Tensions:</strong> Raw material supply consistency
+                                                affected
+                                            </div>
+                                        </div>
+                                        <div class="challenge-item">
+
+                                            <div class="challenge-content">
+                                                <strong>MRO Impact:</strong> Delayed maintenance schedules, increased
+                                                costs
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Segmental Analysis Section -->
+            <section class="segmental-analysis" id="segmental-title">
+                <div class="segmental-content">
+                    <div class="section-header">
+                        <h2 id="segmental-title">Market Segmentation Analysis</h2>
+                        <p class="section-subtitle">Comprehensive breakdown by product, sales channel, and vehicle type
+                            with growth dynamics</p>
+                    </div>
+
+                    <div class="segments-overview">
+                        <div class="overview-card">
+                            <div class="overview-header">
+                                <div class="overview-icon" aria-hidden="true">📊</div>
+                                <h3 class="overview-title">Market Segmentation Overview</h3>
+                            </div>
+                            <div class="overview-description">
+                                The automotive infotainment systems market demonstrates diverse growth patterns across
+                                product categories, sales channels, and vehicle types. <strong>Display units dominate
+                                    the product segment</strong>, while <strong>OEM channels lead in sales</strong>, and
+                                <strong>passenger cars represent the largest vehicle segment</strong> with 67.39% market
+                                share in 2024.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- By Product Segmentation -->
+                    <div class="segment-category">
+                        <div class="category-header">
+                            <h3 class="category-title">
+                                By Product Segmentation
+                            </h3>
+                            <p class="category-subtitle">Analysis of audio unit, display unit, heads-up display,
+                                navigation unit, and communication unit segments</p>
+                        </div>
+
+                        <div class="segment-leaders">
+                            <!-- OEM - Largest -->
+                            <div class="leader-card largest">
+                                <div class="leader-header">
+                                    <div class="leader-badge largest-badge">Largest Revenue Share</div>
+                                    <h4 class="leader-title">Display Unit</h4>
+                                    <div class="leader-status">Market Leader 2024</div>
+                                </div>
+                                <div class="leader-content">
+                                    <div class="driver-points">
+                                        <div class="point-item">
+                                            <div class="point-text">Key benefits include improved focus, increased
+                                                safety, and enhanced awareness driving adoption</div>
+                                        </div>
+                                        <div class="point-item">
+                                            <div class="point-text">Increasing adoption of larger display units for
+                                                navigation
+                                                and vehicle control driving segment progress</div>
+                                        </div>
+                                    </div>
+                                    <div class="market-example">
+                                        <div class="example-header">
+                                            <strong>Market Example:</strong>
+                                        </div>
+                                        <p class="example-text">In December 2024, Teleste launched display unit
+                                            controller with
+                                            Intel Atom processor, providing increased performance, memory capacity, and
+                                            strengthened cybersecurity for transit operators worldwide.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Aftermarket - Fastest Growth -->
+                            <div class="leader-card fastest">
+                                <div class="leader-header">
+                                    <div class="leader-badge fastest-badge">Fastest CAGR</div>
+                                    <h4 class="leader-title">Heads-Up Display </h4>
+                                    <div class="leader-status">Forecast Period Growth Leader</div>
+                                </div>
+                                <div class="leader-content">
+                                    <div class="driver-points">
+                                        <div class="point-item">
+                                            <div class="point-text">Rising adoption in electric and luxury vehicles
+                                                propelling
+                                                segment progress</div>
+                                        </div>
+                                        <div class="point-item">
+                                            <div class="point-text">Advancements in autonomous vehicles driving adoption
+                                                and
+                                                boosting market size</div>
+                                        </div>
+                                        <div class="point-item">
+                                            <div class="point-text">Rising adoption in budget-friendly customer base
+                                                fueling
+                                                segment progress and driving market share</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- By Sales Channel Segmentation -->
+                <div class="segment-category">
+                    <div class="category-header">
+                        <h3 class="category-title">
+                            By Sales Channel Segmentation
+                        </h3>
+                        <p class="category-subtitle">Analysis of OEM and aftermarket distribution channels</p>
+                    </div>
+
+                    <div class="segment-leaders">
+                        <!-- OEM - Largest -->
+                        <div class="leader-card largest">
+                            <div class="leader-header">
+                                <div class="leader-badge largest-badge">Largest Revenue Share</div>
+                                <h4 class="leader-title">OEM (Original Equipment Manufacturer)</h4>
+                                <div class="leader-status">Market Leader 2024</div>
+                            </div>
+                            <div class="leader-content">
+                                <div class="driver-points">
+                                    <div class="point-item">
+                                        <div class="point-text">Rising safety rules and regulations requiring
+                                            OEMs
+                                            to supply original parts per government norms</div>
+                                    </div>
+                                    <div class="point-item">
+                                        <div class="point-text">OEM integration of IoT into infotainment systems
+                                            driving market progress</div>
+                                    </div>
+                                </div>
+                                <div class="market-example">
+                                    <div class="example-header">
+                                        <strong>Market Example:</strong>
+                                    </div>
+                                    <p class="example-text">In January 2021, Cerence launched Cerence Look for
+                                        driver interaction, with Cerence serving as OEM for Mercedes-Benz to
+                                        deploy
+                                        this technology.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Aftermarket - Fastest Growth -->
+                        <div class="leader-card fastest">
+                            <div class="leader-header">
+                                <div class="leader-badge fastest-badge">Fastest CAGR</div>
+                                <h4 class="leader-title">Aftermarket</h4>
+                                <div class="leader-status">Forecast Period Growth Leader</div>
+                            </div>
+                            <div class="leader-content">
+                                <div class="driver-points">
+                                    <div class="point-item">
+                                        <div class="point-text">Rising adoption driving retrofitting of systems
+                                            into
+                                            older vehicles boosting segment growth</div>
+                                    </div>
+                                    <div class="point-item">
+                                        <div class="point-text">Cost effectiveness and advanced options
+                                            attracting
+                                            customers to aftermarket products</div>
+                                    </div>
+                                    <div class="point-item">
+                                        <div class="point-text">Rise of plug-and-play infotainment systems
+                                            fueling
+                                            aftermarket segment progress</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- By Vehicle Segmentation -->
+                <div class="segment-category">
+                    <div class="category-header">
+                        <h3 class="category-title">
+                            By Vehicle Type Segmentation
+                        </h3>
+                        <p class="category-subtitle">Analysis of passenger cars, light commercial vehicles, and
+                            heavy commercial vehicles</p>
+                    </div>
+
+                    <div class="segment-leaders">
+                        <!-- Passenger Cars - Largest -->
+                        <div class="leader-card largest">
+                            <div class="leader-header">
+                                <div class="leader-badge largest-badge">Largest Revenue Share</div>
+                                <h4 class="leader-title">Passenger Cars</h4>
+                                <div class="leader-status">67.39% Market Share 2024</div>
+                            </div>
+                            <div class="leader-content">
+                                <div class="driver-points">
+                                    <div class="point-item">
+                                        <div class="point-text">Integration of ADAS features with infotainment
+                                            systems driving market development</div>
+                                    </div>
+                                    <div class="point-item">
+                                        <div class="point-text">Rising penetration of electric and hybrid cars
+                                            paving way for infotainment systems progress</div>
+                                    </div>
+                                    <div class="point-item">
+                                        <div class="point-text">Growing passenger car production driving
+                                            infotainment systems market demand</div>
+                                    </div>
+                                </div>
+                                <div class="market-example">
+                                    <div class="example-header">
+                                        <strong>Market Data:</strong>
+                                    </div>
+                                    <p class="example-text">According to International Organization of Motor
+                                        Vehicle
+                                        Manufacturers, passenger car sales increased from 7% in FY22 to 18% in
+                                        FY23
+                                        in Europe.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Light Commercial Vehicles - Fastest Growth -->
+                        <div class="leader-card fastest">
+                            <div class="leader-header">
+                                <div class="leader-badge fastest-badge">Fastest CAGR</div>
+                                <h4 class="leader-title">Light Commercial Vehicles (LCV)</h4>
+                                <div class="leader-status">Forecast Period Growth Leader</div>
+                            </div>
+                            <div class="leader-content">
+                                <div class="driver-points">
+                                    <div class="point-item">
+                                        <div class="point-text">Rising focus on connected vehicles providing
+                                            real-time vehicle analysis on infotainment systems</div>
+                                    </div>
+                                    <div class="point-item">
+                                        <div class="point-text">Growing e-commerce sector increasing demand for
+                                            LCVs
+                                            for online order delivery</div>
+                                    </div>
+                                    <div class="point-item">
+                                        <div class="point-text">Growing adoption of electric vehicles in LCV
+                                            segment
+                                            driving market adoption</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Market Insights Summary -->
+                <div class="segmental-insights">
+                    <div class="insights-card">
+                        <div class="insights-header">
+                            <h3 class="insights-title">Key Segmental Insights</h3>
+                        </div>
+                        <div class="insights-grid">
+                            <div class="insight-item">
+                                <div class="insight-label">Product Innovation</div>
+                                <div class="insight-description">Display units lead through enhanced performance
+                                    and
+                                    larger screen adoption</div>
+                            </div>
+                            <div class="insight-item">
+                                <div class="insight-label">Channel Evolution</div>
+                                <div class="insight-description">Aftermarket growth driven by plug-and-play
+                                    solutions and cost effectiveness</div>
+                            </div>
+                            <div class="insight-item">
+                                <div class="insight-label">Vehicle Transformation</div>
+                                <div class="insight-description">LCV segment accelerating through e-commerce and
+                                    electrification trends</div>
+                            </div>
+                            <div class="insight-item">
+                                <div class="insight-label">Technology Integration</div>
+                                <div class="insight-description">ADAS integration and connected vehicle features
+                                    driving adoption</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    </section>
+
+    <!-- Competitive Analysis Section -->
+    <section class="competitive-analysis" id="competitive-title">
+        <div class="analysis-content">
+            <div class="section-header">
+                <h2 id="competitive-title">Competitive Analysis</h2>
+                <p class="section-subtitle">Market dynamics, key players, and competitive forces shaping the
+                    industry</p>
+            </div>
+
+            <div class="analysis-grid">
+                <!-- Key Players Section -->
+                <div class="players-section">
+                    <div class="players-card">
+                        <div class="card-header">
+                            <h3 class="card-title">Key Market Players</h3>
+                        </div>
+                        <div class="card-content">
+                            <p class="players-intro">
+                                The aerospace fasteners market is characterized by the presence of several key
+                                players that drive its dynamics. These companies are engaged in continuous R&D
+                                efforts, working with aerospace OEMs to ensure compliance with stringent safety
+                                standards.
+                            </p>
+
+                            <div class="players-categories">
+                                <div class="category-group">
+                                    <h4 class="category-title">Leading Suppliers</h4>
+                                    <div class="players-grid">
+                                        <div class="player-card">
+                                            <div class="player-name ">Arconic</div>
+                                            <div class="player-location">U.S.</div>
+                                            <div class="player-role">Innovation & Supply</div>
+                                        </div>
+                                        <div class="player-card">
+                                            <div class="player-name">Parker-Hannifin</div>
+                                            <div class="player-location">U.S.</div>
+                                            <div class="player-role">Essential Components</div>
+                                        </div>
+                                        <div class="player-card">
+                                            <div class="player-name">Lisi Aerospace</div>
+                                            <div class="player-location">France</div>
+                                            <div class="player-role">Aerospace Components</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="category-group">
+                                    <h4 class="category-title">Key Customers & Collaborators</h4>
+                                    <div class="players-grid">
+                                        <div class="player-card ">
+                                            <div class="player-name">Boeing</div>
+                                            <div class="player-location">U.S.</div>
+                                            <div class="player-role">Aircraft Manufacturer</div>
+                                        </div>
+                                        <div class="player-card ">
+                                            <div class="player-name">Airbus</div>
+                                            <div class="player-location">Europe</div>
+                                            <div class="player-role">Aircraft Manufacturer</div>
+                                        </div>
+                                        <div class="player-card">
+                                            <div class="player-name">KAMAX</div>
+                                            <div class="player-location">Germany</div>
+                                            <div class="player-role">Specialized Materials</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="category-group">
+                                    <h4 class="category-title">Defense & Space Applications</h4>
+                                    <div class="players-grid">
+                                        <div class="player-card ">
+                                            <div class="player-name">Northrop Grumman</div>
+                                            <div class="player-location">U.S.</div>
+                                            <div class="player-role">Defense & Space</div>
+                                        </div>
+                                        <div class="player-card ">
+                                            <div class="player-name">Starbrite</div>
+                                            <div class="player-location">U.S.</div>
+                                            <div class="player-role">Precision & Reliability</div>
+                                        </div>
+                                        <div class="player-card">
+                                            <div class="player-name">Trelleborg</div>
+                                            <div class="player-location">Sweden</div>
+                                            <div class="player-role">Specialized Designs</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="collaboration-note">
+                                <div class="note-content">
+                                    <strong>Supply Chain Integration:</strong> Companies maintain collaborative
+                                    relationships with MRO services, supporting aircraft production, maintenance
+                                    schedules, and fleet retrofitting.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Porter's Five Forces Section -->
+                <div class="porters-section">
+                    <div class="porters-card">
+                        <div class="card-header">
+                            <h3 class="card-title">Porter's Five Forces Analysis</h3>
+                        </div>
+                        <div class="card-content">
+                            <p class="porters-intro">
+                                Analysis of competitive dynamics in the aerospace ball bearings market reveals
+                                varying levels of market forces impact.
+                            </p>
+
+                            <div class="forces-container">
+                                <div class="force-item low">
+                                    <div class="force-header">
+                                        <div class="force-info">
+                                            <h4 class="force-name">Supplier Bargaining Power</h4>
+                                            <span class="force-level low">Low</span>
+                                        </div>
+                                    </div>
+                                    <p class="force-description">
+                                        Most aerospace manufacturers opt for tailored solutions from specialized
+                                        bearing manufacturers. Established companies have secured their supply
+                                        chain through vertical integration, diminishing supplier leverage.
+                                    </p>
+                                </div>
+
+                                <div class="force-item medium">
+                                    <div class="force-header">
+                                        <div class="force-info">
+                                            <h4 class="force-name">Buyer Bargaining Power</h4>
+                                            <span class="force-level medium">Medium</span>
+                                        </div>
+                                    </div>
+                                    <p class="force-description">
+                                        Complexity of aerospace manufacturing requires specialized components.
+                                        However, OEMs and maintenance companies can leverage large-scale orders
+                                        and aftermarket supply contracts.
+                                    </p>
+                                </div>
+
+                                <div class="force-item low">
+                                    <div class="force-header">
+                                        <div class="force-info">
+                                            <h4 class="force-name">Threat of Substitutes</h4>
+                                            <span class="force-level low">Low</span>
+                                        </div>
+                                    </div>
+                                    <p class="force-description">
+                                        Specialized steel alloy and hybrid materials don't provide the same
+                                        performance benchmarks as aerospace-grade bearings in high-stress
+                                        environments such as aircraft engines.
+                                    </p>
+                                </div>
+
+                                <div class="force-item high">
+                                    <div class="force-header">
+                                        <div class="force-info">
+                                            <h4 class="force-name">Threat of New Entrants</h4>
+                                            <span class="force-level high">High Barriers</span>
+                                        </div>
+                                    </div>
+                                    <p class="force-description">
+                                        Significant investments required in technology development,
+                                        certification compliance, and expensive production setups create
+                                        substantial barriers to entry.
+                                    </p>
+                                </div>
+
+                                <div class="force-item medium">
+                                    <div class="force-header">
+                                        <div class="force-info">
+                                            <h4 class="force-name">Competitive Rivalry</h4>
+                                            <span class="force-level medium">Medium</span>
+                                        </div>
+                                    </div>
+                                    <p class="force-description">
+                                        Few established players dominate the market. New entrants face
+                                        challenges in capturing market share, while increasing demand for
+                                        durable, low-maintenance bearings solidifies market potential.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regional Analysis Section -->
+    <section class="regional-analysis" id="regional-title">
+        <div class="regional-content">
+            <div class="section-header">
+                <h2 id="regional-title">Regional Analysis</h2>
+                <p class="section-subtitle">Geographic market dynamics and growth opportunities across key
+                    regions</p>
+            </div>
+
+            <div class="regions-grid">
+                <div class="summary-card">
+                    <div class="summary-header">
+                        <div class="summary-icon" aria-hidden="true">🌐</div>
+                        <h3 class="summary-title">Global Market Outlook</h3>
+                    </div>
+                    <div class="summary-content">
+                        <div class="growth-trends">
+                            <div class="trend-item">
+                                <span class="trend-label">Leading Growth:</span>
+                                <span class="trend-value">Asia Pacific (Fastest expansion)</span>
+                            </div>
+                            <div class="trend-item">
+                                <span class="trend-label">Innovation Hub:</span>
+                                <span class="trend-value">Europe (Advanced technologies)</span>
+                            </div>
+                            <div class="trend-item">
+                                <span class="trend-label">Established Market:</span>
+                                <span class="trend-value">North America (Prominent growth)</span>
+                            </div>
+                            <div class="trend-item">
+                                <span class="trend-label">Emerging Opportunity:</span>
+                                <span class="trend-value">MEA & Latin America (Strategic growth)</span>
+                            </div>
+                        </div>
+                        <div class="key-insights">
+                            <h4 class="insights-title">Key Market Insights:</h4>
+                            <div class="insights-grid">
+                                <div class="insight-chip">Sustainable Aviation Focus</div>
+                                <div class="insight-chip">Defense Modernization</div>
+                                <div class="insight-chip">MRO Market Expansion</div>
+                                <div class="insight-chip">Advanced Materials Adoption</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- North America -->
+                <div class="region-card north-america">
+                    <div class="region-header">
+                        <div class="region-info">
+                            <h3 class="region-name">North America</h3>
+                            <span class="growth-status prominent">Prominent Growth</span>
+                        </div>
+                    </div>
+                    <div class="region-content">
+                        <p class="region-description">
+                            Projected to grow prominently due to established aerospace industry and strong
+                            presence of major aircraft manufacturers like <strong>Boeing, Lockheed Martin, and
+                                Northrop Grumman</strong>.Anticipated to witness the fastest growth due to rising air
+                            traffic, government
+                            investments in domestic defense production.Anticipated to witness the fastest growth due to
+                            rising air traffic, government
+                            investments in domestic defense productionAnticipated to witness the fastest growth due to
+                            rising air traffic, government
+                            investments in domestic defense production
+                        </p>
+                        <div class="key-drivers">
+                            <h4 class="drivers-title">Key Growth Drivers:</h4>
+                            <ul class="drivers-list">
+                                <li>Robust R&D activities and advanced materials adoption</li>
+                                <li>Well-established supply chain and skilled workforce</li>
+                                <li>Military modernization programs</li>
+                                <li>Sustainable aviation focus (electric/hybrid aircraft)</li>
+                            </ul>
+                        </div>
+                        <div class="market-focus">
+                            <strong>Market Focus:</strong> Lightweight, high-performance bearings for
+                            sustainable aviation
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Asia Pacific -->
+                <div class="region-card asia-pacific">
+                    <div class="region-header">
+                        <div class="region-info">
+                            <h3 class="region-name">Asia Pacific</h3>
+                            <span class="growth-status fastest">Fastest Growth</span>
+                        </div>
+                    </div>
+                    <div class="region-content">
+                        <p class="region-description">
+                            Anticipated to witness the fastest growth due to rising air traffic, government
+                            investments in domestic defense production, and aerospace manufacturing hubs in
+                            <strong>China, Japan, South Korea, and India</strong>.Anticipated to witness the fastest
+                            growth due to rising air traffic, government.
+                        </p>
+                        <div class="key-drivers">
+                            <h4 class="drivers-title">Key Growth Drivers:</h4>
+                            <ul class="drivers-list">
+                                <li>Rising demand for lightweight, fuel-efficient bearings</li>
+                                <li>Government initiatives (India's UDAN-4 program)</li>
+                                <li>Economic growth and increasing military spending</li>
+                                <li>Hybrid and ceramic bearings adoption</li>
+                            </ul>
+                        </div>
+                        <div class="market-focus">
+                            <strong>Market Focus:</strong> Commercial, cargo, and defense aircraft bearing
+                            solutions
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Europe -->
+                <div class="region-card europe">
+                    <div class="region-header">
+                        <div class="region-info">
+                            <h3 class="region-name">Europe</h3>
+                            <span class="growth-status significant">Significant Growth</span>
+                        </div>
+                    </div>
+                    <div class="region-content">
+                        <p class="region-description">
+                            Expected to contribute significantly due to strong focus on developing advanced
+                            bearing technologies for military, commercial, and unmanned aircraft. Leading
+                            innovations in <strong>smart bearings and precision engineering</strong>.
+                        </p>
+                        <div class="key-drivers">
+                            <h4 class="drivers-title">Key Growth Drivers:</h4>
+                            <ul class="drivers-list">
+                                <li>EU Horizon Europe and Clean Sky 2 programs</li>
+                                <li>Supplier-buyer collaborations (Safran, Airbus)</li>
+                                <li>5G connected aerospace systems</li>
+                                <li>Carbon emission reduction initiatives</li>
+                            </ul>
+                        </div>
+                        <div class="market-focus">
+                            <strong>Market Focus:</strong> Low-friction, high-reliability bearings for electric
+                            aircraft
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Latin America -->
+                <div class="region-card latin-america">
+                    <div class="region-header">
+                        <div class="region-info">
+                            <h3 class="region-name">Latin America</h3>
+                            <span class="growth-status considerable">Considerable Growth</span>
+                        </div>
+                    </div>
+                    <div class="region-content">
+                        <p class="region-description">
+                            Likely to grow at considerable rate driven by rising air travel demand and strategic
+                            military investments. <strong>Brazil and Mexico</strong> emerging as key players in
+                            commercial aircraft MRO.
+                        </p>
+                        <div class="key-drivers">
+                            <h4 class="drivers-title">Key Growth Drivers:</h4>
+                            <ul class="drivers-list">
+                                <li>Growing MRO collaborations with OEMs</li>
+                                <li>Localized bearing component production</li>
+                                <li>Environmental sustainability commitment</li>
+                                <li>International aerospace OEM partnerships</li>
+                            </ul>
+                        </div>
+                        <div class="market-focus">
+                            <strong>Market Focus:</strong> High-performance bearing replacements and
+                            region-specific solutions
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Middle East & Africa -->
+                <div class="region-card mea">
+                    <div class="region-header">
+                        <div class="region-info">
+                            <h3 class="region-name">Middle East & Africa</h3>
+                            <span class="growth-status faster">Faster Growth</span>
+                        </div>
+                    </div>
+                    <div class="region-content">
+                        <p class="region-description">
+                            Expected to grow at faster rate driven by strategic defense investments and advanced
+                            aviation technologies integration. <strong>UAE and Saudi Arabia</strong> emerging as
+                            key bearing manufacturing hubs.
+                        </p>
+                        <div class="key-drivers">
+                            <h4 class="drivers-title">Key Growth Drivers:</h4>
+                            <ul class="drivers-list">
+                                <li>Public, private, and cargo sector investments</li>
+                                <li>Military and MRO facility construction</li>
+                                <li>Africa's rising air passenger growth</li>
+                                <li>Military modernization (South Africa, Nigeria)</li>
+                            </ul>
+                        </div>
+                        <div class="market-focus">
+                            <strong>Market Focus:</strong> High-temperature, wear-resistant, vibration-dampening
+                            bearings
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Recent Industry Developments Section -->
+    <section class="industry-developments" id="developments-title">
+        <div class="developments-content">
+            <div class="section-header">
+                <h2 id="developments-title">Recent Industry Developments</h2>
+                <p class="section-subtitle">Latest market innovations, product launches, and strategic initiatives
+                    shaping the industry landscape</p>
+            </div>
+
+            <div class="developments-timeline">
+                <div class="timeline-container-dev">
+                    <!-- June 2022 Development -->
+                    <div class="development-item">
+                        <div class="development-date">
+                            <div class="date-badge">June 2022</div>
+                        </div>
+                        <div class="development-card">
+
+                            <div class="development-content">
+                                <p class="development-description">
+                                    Califia Farms is a US plant-based beverage company that makes dairy-free creamers.
+                                    Their Iced Café Mixers are designed for iced coffees and contain 3g of sugar per
+                                    serving. They are made with a blend of oat and almond milk.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- June 2021 Development -->
+                    <div class="development-item">
+                        <div class="development-date">
+                            <div class="date-badge">June 2021</div>
+                        </div>
+                        <div class="development-card">
+
+                            <div class="development-content">
+                                <p class="development-description">
+                                    Laird Superfood is announced the expansion of its line of powdered superfood coffee
+                                    creamers with the launch of Aloha Oat & Macadamia Nut Superfood Creamer. This
+                                    plant-based oat milk creamer is inspired by the flavors of Hawaii and is made with
+                                    real, whole-food ingredients. It is also Laird Superfood's first non-coconut-based
+                                    creamer.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- January 2021 Development -->
+                    <div class="development-item">
+                        <div class="development-date">
+                            <div class="date-badge">January 2021</div>
+                        </div>
+                        <div class="development-card">
+
+                            <div class="development-content">
+                                <p class="development-description">
+                                    Coffee Mate, a Nestlé brand, launched three new coffee creamer flavors: M&M's Milk
+                                    Chocolate, Oatmeal Crème Pie, and Glazed Donut. The Oatmeal Crème Pie flavor is a
+                                    combination of cinnamon, brown sugar, and oatmeal cookie flavors.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Frequently Asked Questions Section -->
+    <section class="faq-section" id="faq-title">
+        <div class="faq-content">
+            <div class="section-header">
+                <h2 id="faq-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Common questions and detailed answers about market research reports and
+                    industry insights</p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="question-text">How big is the Industrial Control Systems Market?</span>
+                        <span class="question-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Global Industrial Control Systems Market size is estimated to reach over USD 393.44 Billion
+                            by 2031 from a value of USD 196.77 Billion in 2023 and is projected to grow by USD 211.07
+                            Billion in 2024, growing at a CAGR of 9.0% from 2024 to 2031.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="question-text">What specific segmentation details are covered in the Industrial
+                            Control Systems report?</span>
+                        <span class="question-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The Industrial Control Systems report includes specific segmentation details for components,
+                            applications, end-users, and regions.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="question-text">Which is the fastest segment anticipated to impact the market
+                            growth?</span>
+                        <span class="question-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>In the component segment, the hardware segment is the fastest-growing segment during the
+                            forecast period due to the surge in industrial automation drives industries to heavily
+                            invest in control system advancements for enhanced efficiency, productivity security, and
+                            others.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="question-text">Who are the major players in the Industrial Control Systems
+                            Market?</span>
+                        <span class="question-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The key participants in the Industrial Control Systems Market are Bosch Industriekessel GmbH
+                            (Germany), Siemens (Germany), ABB (Switzerland), Rockwell Automation (U.S), Honeywell
+                            International Inc. (U.S), Schneider Electric (France), Emerson Electric Co. (U.S),
+                            Mitsubishi Electric Corporation (Japan), Yokogawa Electric (Japan), Omron Corporation
+                            (Japan) and others.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="question-text">What are the key trends in the Industrial Control Systems
+                            Market?</span>
+                        <span class="question-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The Industrial Control Systems Market is being shaped by several key trends including the
+                            growing demand for advanced process control software, industries moving towards more
+                            sustainability and adopting smart manufacturing technologies, and others.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="question-text">How big is the Intravenous Solution Market?</span>
+                        <span class="question-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Intravenous Solution Market size is estimated to reach over USD 24,667.69 Million by 2031
+                            from a value of USD 12,443.55 Million in 2023, growing at a CAGR of 9.1% from 2024 to 2031.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="question-text">Which is the fastest-growing region in the Intravenous Solution
+                            Market?</span>
+                        <span class="question-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The fastest-growing region in the Intravenous Solution Market is Asia Pacific.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="question-text">What specific segmentation details are covered in the intravenous
+                            solution market report?</span>
+                        <span class="question-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The specific segments that are covered in the intravenous solution market are type and
+                            end-user.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="question-text">Who are the major players in the Intravenous Solution Market?</span>
+                        <span class="question-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Baxter., AdvaCare Pharma, B. Braun Medical Inc., Puerto Life Sciences Pvt. Ltd., Fresenius
+                            Kabi AG, ICU Medical, Inc., JW Holdings, Pfizer Inc., Otsuka Pharmaceutical Factory, Inc.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="question-text">How big is the Cloud Communication Platform market?</span>
+                        <span class="question-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Cloud Communication Platform Market size is estimated to reach over USD 57,471.49 Million by
+                            2031 from a value of USD 14,544.52 Million in 2023 and is projected to grow by USD 17,428.19
+                            Million in 2024, growing at a CAGR of 18.7% from 2024 to 2031.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="question-text">What specific segmentation details are covered in the Cloud
+                            Communication Platform Market report?</span>
+                        <span class="question-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The Cloud Communication Platform market report includes segmentation details for components,
+                            Organization <strong>Size</strong>, <strong>deployment mode</strong>, application, and
+                            end-user industry.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="question-text">Which is the fastest-growing application in the Cloud Communication
+                            Platform market?</span>
+                        <span class="question-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>According to the analysis, video conferencing is the fastest-growing application in the Cloud
+                            Communication Platform market, driven by the increased use of video conferencing and
+                            collaboration tools in remote work environments and enterprises.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="question-text">Who are the major players in the Cloud Communication Platform
+                            Market?</span>
+                        <span class="question-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The major players in the Cloud Communication Platform market include Twilio (USA), Vonage
+                            (USA), Plivo (USA), Bandwidth (USA), Telnyx (USA), Infobip (Croatia), 8x8 (USA), MessageBird
+                            (Netherlands), Sinch (Sweden), and Telesign (USA).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Related Reports Section -->
+    <section class="related-reports" id="related-title">
+        <div class="related-content">
+            <div class="section-header">
+                <h2 id="related-title">Related Reports</h2>
+                <p class="section-subtitle">Explore our comprehensive collection of market research reports in related
+                    industries</p>
+            </div>
+
+            <div class="reports-grid">
+                <!-- Report 1 -->
+                <div class="report-card-simple">
+                    <div class="report-info">
+                        <h3 class="report-name">Smart Machines Market</h3>
+                        <div class="report-date">Published: December 2024</div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+
+                <!-- Report 2 -->
+                <div class="report-card-simple">
+                    <div class="report-info">
+                        <h3 class="report-name">Home Systems Market</h3>
+                        <div class="report-date">Published: November 2024</div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+
+                <!-- Report 3 -->
+                <div class="report-card-simple">
+                    <div class="report-info">
+                        <h3 class="report-name">Industrial IoT Market</h3>
+                        <div class="report-date">Published: October 2024</div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+
+                <!-- Report 4 -->
+                <div class="report-card-simple">
+                    <div class="report-info">
+                        <h3 class="report-name">Artificial Intelligence Market</h3>
+                        <div class="report-date">Published: September 2024</div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+
+                <!-- Report 5 -->
+                <div class="report-card-simple">
+                    <div class="report-info">
+                        <h3 class="report-name">Cloud Computing Market</h3>
+                        <div class="report-date">Published: August 2024</div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+
+                <!-- Report 6 -->
+                <div class="report-card-simple">
+                    <div class="report-info">
+                        <h3 class="report-name">Cybersecurity Market</h3>
+                        <div class="report-date">Published: July 2024</div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Blogs & News Section -->
+    <section class="related-blogs" id="blogs-title">
+        <div class="blogs-content">
+            <div class="section-header">
+                <h2 id="blogs-title">Related Blogs & News</h2>
+                <p class="section-subtitle">Stay updated with the latest industry insights, trends, and market
+                    developments</p>
+            </div>
+
+            <div class="blogs-grid">
+                <!-- Blog 1 -->
+                <div class="blog-card-simple">
+                    <div class="blog-info">
+                        <h3 class="blog-title">AI Revolution in Smart Manufacturing Industries</h3>
+                        <div class="blog-date">Published: December 2024</div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+
+                <!-- Blog 2 -->
+                <div class="blog-card-simple">
+                    <div class="blog-info">
+                        <h3 class="blog-title">Top 5 Home Automation Trends for 2025</h3>
+                        <div class="blog-date">Published: November 2024</div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+
+                <!-- News 1 -->
+                <div class="blog-card-simple">
+                    <div class="blog-info">
+                        <h3 class="blog-title">Breaking: Major IoT Security Breakthrough Announced</h3>
+                        <div class="blog-date">Published: November 2024</div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+
+                <!-- Blog 3 -->
+                <div class="blog-card-simple">
+                    <div class="blog-info">
+                        <h3 class="blog-title">Cloud Technology Market Outlook: What to Expect</h3>
+                        <div class="blog-date">Published: October 2024</div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+
+                <!-- News 2 -->
+                <div class="blog-card-simple">
+                    <div class="blog-info">
+                        <h3 class="blog-title">Industry Report: Cybersecurity Investment Reaches New High</h3>
+                        <div class="blog-date">Published: October 2024</div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+
+                <!-- Blog 4 -->
+                <div class="blog-card-simple">
+                    <div class="blog-info">
+                        <h3 class="blog-title">Machine Learning Applications in Modern Business</h3>
+                        <div class="blog-date">Published: September 2024</div>
+                    </div>
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    </div>
+</body>
+<script>
+    // FAQ Accordion functionality
+    document.addEventListener('DOMContentLoaded', function () {
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', function () {
+                const faqItem = this.parentElement;
+                const answer = faqItem.querySelector('.faq-answer');
+                const icon = this.querySelector('.question-icon');
+
+                // Toggle active state
+                const isActive = faqItem.classList.contains('active');
+
+                // Close all other FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                    item.querySelector('.question-icon').textContent = '+';
+                });
+
+                // Toggle current item
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                    icon.textContent = '-';
+                }
+            });
+        });
+    });
+    // Navigation Bar functionality
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('section[aria-labelledby], h3[id]');
+    const navbar = document.getElementById('reportNavbar');
+    const snapshotSection = document.querySelector('.market-snapshot');
+
+    let navbarOriginalTop = navbar.offsetTop;
+
+    // Smooth scrolling for navigation links
+    navLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                const isNavbarSticky = navbar.classList.contains('sticky');
+                const navbarHeight = isNavbarSticky ? navbar.offsetHeight : 0;
+                const targetPosition = targetElement.offsetTop - navbarHeight - 20;
+
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+
+                // Update active link
+                navLinks.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            }
+        });
+    });
+
+    // Handle sticky navbar and active section detection
+    let isScrolling = false;
+
+    window.addEventListener('scroll', function () {
+        if (!isScrolling) {
+            window.requestAnimationFrame(function () {
+                const scrollPosition = window.scrollY;
+
+                // Handle sticky navbar
+                if (scrollPosition > navbarOriginalTop) {
+                    navbar.classList.add('sticky');
+                } else {
+                    navbar.classList.remove('sticky');
+                }
+
+                // Update active navigation link
+                const isNavbarSticky = navbar.classList.contains('sticky');
+                const offset = isNavbarSticky ? navbar.offsetHeight + 150 : 150;
+                const checkPosition = scrollPosition + offset;
+                let currentSection = '';
+
+                // Check which section is currently in view
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+
+                    if (checkPosition >= sectionTop && checkPosition < sectionTop + sectionHeight) {
+                        currentSection = section.id || section.getAttribute('aria-labelledby');
+                    }
+                });
+
+                // Update active nav link
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    const linkTarget = link.getAttribute('href').substring(1);
+                    if (linkTarget === currentSection) {
+                        link.classList.add('active');
+                    }
+                });
+
+                isScrolling = false;
+            });
+        }
+        isScrolling = true;
+    });
+
+    // Recalculate navbar position on window resize
+    window.addEventListener('resize', function () {
+        navbarOriginalTop = navbar.offsetTop;
+    });
+
+</script>
+
+</html>
