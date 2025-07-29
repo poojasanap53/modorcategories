@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiQ Insights Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --navy-blue: #1a365d;
+            --orange: #e67e22;
+            --light-gray: #f8f9fa;
+            --medium-gray: #6c757d;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--navy-blue);
+            background-color: var(--light-gray);
+        }
+
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        /* Header */
+        .header {
+            background: var(--white);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--navy-blue);
+            cursor: pointer;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, var(--navy-blue), var(--orange));
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--navy-blue);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .nav-links a:hover {
+            color: var(--orange);
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(135deg, var(--navy-blue), #2a4a6b);
+            color: white;
+            margin-bottom: 3rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Section Styles */
+        .section {
+            margin-bottom: 4rem;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid var(--orange);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--navy-blue);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .section-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--orange);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .view-all-btn {
+            background: var(--orange);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .view-all-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(230, 126, 34, 0.4);
+        }
+
+        /* Card Grid */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+
+        .card-image {
+            height: 200px;
+            background: linear-gradient(45deg, var(--navy-blue), var(--orange));
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.3);
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            color: var(--medium-gray);
+        }
+
+        .card-category {
+            background: var(--orange);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--navy-blue);
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+
+        .card-excerpt {
+            color: var(--medium-gray);
+            line-height: 1.6;
+        }
+
+        /* Individual Page Styles */
+        .page-hero {
+            background: linear-gradient(135deg, var(--navy-blue), #2a4a6b);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .page-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .back-btn {
+            background: transparent;
+            color: var(--orange);
+            border: 2px solid var(--orange);
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+
+        .back-btn:hover {
+            background: var(--orange);
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0 1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-header {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo" onclick="showPage('insights')">
+                <div class="logo-icon">MiQ</div>
+                <span>Market-i-Quest</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a onclick="showPage('insights')">Insights</a></li>
+                    <li><a onclick="showPage('blog')">Blog</a></li>
+                    <li><a onclick="showPage('news')">News</a></li>
+                    <li><a onclick="showPage('case-studies')">Case Studies</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Insights Page -->
+    <div id="insights" class="page active">
+        <div class="hero">
+            <div class="container">
+                <h1>Insights Hub</h1>
+                <p>Discover the latest industry trends, expert insights, and success stories that drive market intelligence forward</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Blog Section -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <div class="section-icon">📝</div>
+                        Latest Blog Posts
+                    </h2>
+                    <button class="view-all-btn" onclick="showPage('blog')">View All Posts</button>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-image"></div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="card-category">Strategy</span>
+                                <span>July 25, 2025</span>
+                            </div>
+                            <h3 class="card-title">The Future of Market Intelligence: AI-Driven Insights</h3>
+                            <p class="card-excerpt">Explore how artificial intelligence is revolutionizing market research and providing unprecedented insights into consumer behavior and market trends.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image"></div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="card-category">Technology</span>
+                                <span>July 22, 2025</span>
+                            </div>
+                            <h3 class="card-title">Data Privacy in Market Research: Best Practices</h3>
+                            <p class="card-excerpt">Learn about the latest regulations and best practices for maintaining data privacy while conducting comprehensive market research.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image"></div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="card-category">Trends</span>
+                                <span>July 20, 2025</span>
+                            </div>
+                            <h3 class="card-title">Emerging Markets: Opportunities in 2025</h3>
+                            <p class="card-excerpt">Discover untapped market opportunities in emerging economies and learn how to position your business for global growth.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image"></div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="card-category">Analytics</span>
+                                <span>July 18, 2025</span>
+                            </div>
+                            <h3 class="card-title">Real-Time Analytics: Transforming Decision Making</h3>
+                            <p class="card-excerpt">How real-time data analytics is enabling businesses to make faster, more informed decisions in today's rapidly changing market landscape.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- News Section -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <div class="section-icon">📰</div>
+                        Industry News
+                    </h2>
+                    <button class="view-all-btn" onclick="showPage('news')">View All News</button>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-image"></div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="card-category">Breaking</span>
+                                <span>July 29, 2025</span>
+                            </div>
+                            <h3 class="card-title">MiQ Announces Strategic Partnership with Global Tech Leader</h3>
+                            <p class="card-excerpt">New collaboration aims to enhance market intelligence capabilities through advanced AI and machine learning technologies.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image"></div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="card-category">Industry</span>
+                                <span>July 28, 2025</span>
+                            </div>
+                            <h3 class="card-title">Market Research Industry Shows 15% Growth in Q2 2025</h3>
+                            <p class="card-excerpt">Latest industry reports show continued expansion in market research services, driven by increased demand for data-driven insights.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image"></div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="card-category">Awards</span>
+                                <span>July 26, 2025</span>
+                            </div>
+                            <h3 class="card-title">MiQ Wins 'Innovation in Market Intelligence' Award</h3>
+                            <p class="card-excerpt">Recognition for groundbreaking work in combining traditional market research with cutting-edge technology solutions.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image"></div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="card-category">Regulation</span>
+                                <span>July 24, 2025</span>
+                            </div>
+                            <h3 class="card-title">New Data Protection Laws Impact Market Research</h3>
+                            <p class="card-excerpt">Updated regulations require market research firms to implement enhanced data protection measures and transparency protocols.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Case Studies Section -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <div class="section-icon">📊</div>
+                        Success Stories
+                    </h2>
+                    <button class="view-all-btn" onclick="showPage('case-studies')">View All Cases</button>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-image"></div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="card-category">Retail</span>
+                                <span>Case Study</span>
+                            </div>
+                            <h3 class="card-title">Global Retailer Increases Sales by 40% Through Market Intelligence</h3>
+                            <p class="card-excerpt">How comprehensive market analysis helped a major retailer identify new opportunities and optimize their product portfolio for maximum impact.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image"></div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="card-category">Technology</span>
+                                <span>Case Study</span>
+                            </div>
+                            <h3 class="card-title">Tech Startup Secures $50M Funding with Market Validation</h3>
+                            <p class="card-excerpt">Strategic market research and validation helped a technology startup demonstrate market potential to investors and secure major funding.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image"></div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="card-category">Healthcare</span>
+                                <span>Case Study</span>
+                            </div>
+                            <h3 class="card-title">Pharmaceutical Company Accelerates Drug Launch Timeline</h3>
+                            <p class="card-excerpt">Market intelligence insights enabled faster market entry and more effective positioning for a new pharmaceutical product launch.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image"></div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="card-category">Finance</span>
+                                <span>Case Study</span>
+                            </div>
+                            <h3 class="card-title">Financial Services Firm Expands to 5 New Markets</h3>
+                            <p class="card-excerpt">Comprehensive market analysis identified optimal expansion opportunities, resulting in successful entry into multiple new geographic markets.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Blog Page -->
+    <div id="blog" class="page">
+        <div class="page-hero">
+            <div class="container">
+                <h1>Expert Insights & Analysis</h1>
+                <p>Deep dive into market trends, strategies, and thought leadership</p>
+            </div>
+        </div>
+        <div class="container">
+            <button class="back-btn" onclick="showPage('insights')">← Back to Insights</button>
+            <div class="card-grid">
+                <!-- Blog posts would be dynamically loaded here -->
+                <div class="card">
+                    <div class="card-image"></div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-category">Strategy</span>
+                            <span>July 25, 2025</span>
+                        </div>
+                        <h3 class="card-title">The Future of Market Intelligence: AI-Driven Insights</h3>
+                        <p class="card-excerpt">Explore how artificial intelligence is revolutionizing market research and providing unprecedented insights into consumer behavior and market trends.</p>
+                    </div>
+                </div>
+                <!-- Additional blog posts... -->
+            </div>
+        </div>
+    </div>
+
+    <!-- News Page -->
+    <div id="news" class="page">
+        <div class="page-hero">
+            <div class="container">
+                <h1>Latest Industry News</h1>
+                <p>Stay updated with breaking news and industry developments</p>
+            </div>
+        </div>
+        <div class="container">
+            <button class="back-btn" onclick="showPage('insights')">← Back to Insights</button>
+            <div class="card-grid">
+                <!-- News articles would be dynamically loaded here -->
+                <div class="card">
+                    <div class="card-image"></div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-category">Breaking</span>
+                            <span>July 29, 2025</span>
+                        </div>
+                        <h3 class="card-title">MiQ Announces Strategic Partnership with Global Tech Leader</h3>
+                        <p class="card-excerpt">New collaboration aims to enhance market intelligence capabilities through advanced AI and machine learning technologies.</p>
+                    </div>
+                </div>
+                <!-- Additional news articles... -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Case Studies Page -->
+    <div id="case-studies" class="page">
+        <div class="page-hero">
+            <div class="container">
+                <h1>Success Stories & Case Studies</h1>
+                <p>Real results from real clients across various industries</p>
+            </div>
+        </div>
+        <div class="container">
+            <button class="back-btn" onclick="showPage('insights')">← Back to Insights</button>
+            <div class="card-grid">
+                <!-- Case studies would be dynamically loaded here -->
+                <div class="card">
+                    <div class="card-image"></div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-category">Retail</span>
+                            <span>Case Study</span>
+                        </div>
+                        <h3 class="card-title">Global Retailer Increases Sales by 40% Through Market Intelligence</h3>
+                        <p class="card-excerpt">How comprehensive market analysis helped a major retailer identify new opportunities and optimize their product portfolio for maximum impact.</p>
+                    </div>
+                </div>
+                <!-- Additional case studies... -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.classList.remove('active'));
+            
+            // Show selected page
+            const targetPage = document.getElementById(pageId);
+            if (targetPage) {
+                targetPage.classList.add('active');
+            }
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+
+        // Add click handlers for cards to simulate opening articles
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // Simulate opening article in new tab
+                    console.log('Opening article:', this.querySelector('.card-title').textContent);
+                    // In a real implementation, this would navigate to the full article
+                });
+            });
+        });
+    </script>
+</body>
+</html>
