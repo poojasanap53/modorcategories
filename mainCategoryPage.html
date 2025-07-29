@@ -1,0 +1,1916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aerospace & Defense Research Reports | Market-I-Quest</title>
+    <meta name="description" content="758 comprehensive aerospace & defense market research reports covering aviation, defense systems, space technology, and emerging aerospace innovations.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-navy: #1B365D;
+            --primary-orange: #E67E22;
+            --aerospace-blue: #4A90E2;
+            --light-gray: #f8f9fa;
+            --medium-gray: #6c757d;
+            --dark-gray: #333;
+            --white: #ffffff;
+            --border-light: #e9ecef;
+            --success-green: #28a745;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            background: var(--light-gray);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .logo-miq {
+            font-size: 2.2rem;
+            margin-right: 0.5rem;
+        }
+
+        .logo-mi {
+            color: var(--primary-navy);
+        }
+
+        .logo-q {
+            color: var(--primary-orange);
+        }
+
+        .company-name {
+            color: var(--primary-navy);
+            font-size: 1rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--dark-gray);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: var(--primary-orange);
+        }
+
+        .header-search {
+            flex: 1;
+            max-width: 400px;
+            margin: 0 2rem;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 0.8rem 1rem 0.8rem 3rem;
+            border: 2px solid var(--border-light);
+            border-radius: 8px;
+            font-size: 0.95rem;
+            transition: border-color 0.3s;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--aerospace-blue);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--medium-gray);
+            font-size: 1rem;
+        }
+
+        .cta-button {
+            background: var(--primary-orange);
+            color: var(--white);
+            padding: 0.9rem 1.8rem;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+
+        .cta-button:hover {
+            background: #d35400;
+            transform: translateY(-2px);
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            background: var(--white);
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .breadcrumb-nav {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb-nav a {
+            color: var(--medium-gray);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .breadcrumb-nav a:hover {
+            color: var(--aerospace-blue);
+        }
+
+        .breadcrumb-nav .current {
+            color: var(--primary-navy);
+            font-weight: 600;
+        }
+
+        /* Industry Header */
+        .industry-header {
+            background: linear-gradient(135deg, var(--primary-navy) 0%, var(--aerospace-blue) 100%);
+            color: var(--white);
+            padding: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .industry-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="aero-pattern" patternUnits="userSpaceOnUse" width="50" height="50"><circle cx="25" cy="25" r="2" fill="rgba(255,255,255,0.1)"/><path d="M10 25 L40 25 M25 10 L25 40" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23aero-pattern)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .industry-hero {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .industry-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #ffffff, #f1c40f);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .industry-stats {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .report-count {
+            font-weight: 700;
+            color: var(--primary-orange);
+            font-size: 2rem;
+        }
+
+        .industry-description {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .industry-highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .highlight-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .highlight-card:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .highlight-card h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+            color: var(--white);
+        }
+
+        .highlight-card span {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.95rem;
+        }
+
+        /* Main Layout */
+        .page-layout {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+            align-items: start;
+        }
+
+        /* Industry Filters */
+        .industry-filters {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 120px;
+            max-height: calc(100vh - 140px);
+            overflow-y: auto;
+        }
+
+        .filter-section {
+            margin-bottom: 2rem;
+        }
+
+        .filter-section h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary-navy);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .filter-toggle {
+            background: none;
+            border: none;
+            color: var(--medium-gray);
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .filter-options {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .filter-option {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 0.4rem 0;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .filter-option:hover {
+            color: var(--aerospace-blue);
+        }
+
+        .filter-option input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            accent-color: var(--aerospace-blue);
+        }
+
+        .filter-option label {
+            cursor: pointer;
+            flex: 1;
+            font-size: 0.9rem;
+        }
+
+        .filter-count {
+            color: var(--medium-gray);
+            font-size: 0.8rem;
+            background: var(--light-gray);
+            padding: 0.2rem 0.5rem;
+            border-radius: 10px;
+        }
+
+        /* Reports Content */
+        .reports-content {
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        /* Featured Reports */
+        .featured-reports {
+            padding: 2rem;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .featured-reports h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-navy);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .featured-reports .fas {
+            color: var(--primary-orange);
+        }
+
+        /* Controls Bar */
+        .controls-bar {
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid var(--border-light);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .results-count {
+            font-weight: 600;
+            color: var(--primary-navy);
+        }
+
+        .sort-controls {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .sort-select {
+            padding: 0.6rem 1rem;
+            border: 1px solid var(--border-light);
+            border-radius: 6px;
+            background: var(--white);
+            color: var(--dark-gray);
+        }
+
+        .view-toggle {
+            display: flex;
+            background: var(--light-gray);
+            border-radius: 6px;
+            padding: 0.2rem;
+        }
+
+        .view-btn {
+            background: none;
+            border: none;
+            padding: 0.6rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .view-btn.active {
+            background: var(--aerospace-blue);
+            color: var(--white);
+        }
+
+        /* Reports Grid */
+        .reports-grid {
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .report-card {
+            background: var(--white);
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .report-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            border-color: var(--aerospace-blue);
+        }
+
+        .report-card.featured {
+            border-left: 4px solid var(--primary-orange);
+            box-shadow: 0 4px 16px rgba(230, 126, 34, 0.2);
+        }
+
+        .industry-tag {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.4rem 0.8rem;
+            border-radius: 15px;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .industry-tag.aerospace {
+            background: var(--aerospace-blue);
+            color: var(--white);
+        }
+
+        .industry-tag.defense {
+            background: #dc3545;
+            color: var(--white);
+        }
+
+        .industry-tag.space {
+            background: #6f42c1;
+            color: var(--white);
+        }
+
+        .industry-tag.commercial {
+            background: #20c997;
+            color: var(--white);
+        }
+
+        .industry-tag.drones {
+            background: #fd7e14;
+            color: var(--white);
+        }
+
+        .report-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary-navy);
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .report-meta {
+            margin-bottom: 1.5rem;
+        }
+
+        .report-meta p {
+            font-size: 0.9rem;
+            color: var(--medium-gray);
+            margin-bottom: 0.5rem;
+        }
+
+        .report-meta p strong {
+            color: var(--dark-gray);
+        }
+
+        .report-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .highlight {
+            background: rgba(74, 144, 226, 0.1);
+            color: var(--aerospace-blue);
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            border: 1px solid rgba(74, 144, 226, 0.2);
+        }
+
+        .report-actions {
+            display: flex;
+            gap: 0.8rem;
+        }
+
+        .btn-primary {
+            background: var(--aerospace-blue);
+            color: var(--white);
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            flex: 1;
+        }
+
+        .btn-primary:hover {
+            background: #357abd;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--aerospace-blue);
+            border: 2px solid var(--aerospace-blue);
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            flex: 1;
+        }
+
+        .btn-secondary:hover {
+            background: var(--aerospace-blue);
+            color: var(--white);
+        }
+
+        /* Industry Insights */
+        .industry-insights {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 3rem 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .industry-insights h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-navy);
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .insights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .insight-card {
+            background: var(--light-gray);
+            padding: 2rem;
+            border-radius: 12px;
+            border-left: 4px solid var(--aerospace-blue);
+        }
+
+        .insight-card h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary-navy);
+            margin-bottom: 1rem;
+        }
+
+        .insight-card ul {
+            list-style: none;
+        }
+
+        .insight-card li {
+            padding: 0.5rem 0;
+            color: var(--medium-gray);
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .insight-card li::before {
+            content: '→';
+            color: var(--aerospace-blue);
+            font-weight: bold;
+        }
+
+        /* Key Players */
+        .key-players {
+            background: var(--light-gray);
+            padding: 3rem 0;
+        }
+
+        .key-players h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-navy);
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .players-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .player-category {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .player-category h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary-navy);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .players-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+
+        .player-tag {
+            background: var(--aerospace-blue);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .player-tag:hover {
+            background: var(--primary-navy);
+            transform: translateY(-2px);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 1024px) {
+            .page-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .industry-filters {
+                position: static;
+                max-height: none;
+                margin-bottom: 2rem;
+            }
+
+            .reports-grid {
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .header-search {
+                max-width: 200px;
+                margin: 0 1rem;
+            }
+
+            .industry-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .industry-highlights {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .reports-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .controls-bar {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: stretch;
+            }
+
+            .sort-controls {
+                justify-content: space-between;
+            }
+
+            .report-actions {
+                flex-direction: column;
+            }
+
+            .insights-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .players-categories {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .industry-header {
+                padding: 3rem 0;
+            }
+
+            .industry-hero h1 {
+                font-size: 2rem;
+            }
+
+            .industry-highlights {
+                grid-template-columns: 1fr;
+            }
+
+            .report-card {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Loading Animation */
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.6; }
+            100% { opacity: 1; }
+        }
+
+        .loading {
+            animation: pulse 1.5s infinite;
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="container">
+            <div class="nav-container">
+                <div class="logo">
+                    <div class="logo-miq">
+                        <span class="logo-mi">Mi</span><span class="logo-q">Q</span>
+                    </div>
+                    <div class="company-name">Market-I-Quest</div>
+                </div>
+                
+                <div class="header-search">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Search aerospace reports..." id="searchInput">
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#market-analysis" class="active">Market Analysis</a></li>
+                    <li><a href="#custom-research">Custom Research</a></li>
+                    <li><a href="#industries">Industries</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                
+                <a href="#contact" class="cta-button">Request Custom Defense Report</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="#home"><i class="fas fa-home"></i> Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="#market-analysis">Market Analysis</a>
+                <i class="fas fa-chevron-right"></i>
+                <span class="current">Aerospace & Defense</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Industry Header -->
+    <section class="industry-header">
+        <div class="container">
+            <div class="industry-hero">
+                <h1>Aerospace & Defense Research Reports</h1>
+                <div class="industry-stats">
+                    <span class="report-count" id="reportCount">758</span> Aerospace & Defense Reports
+                </div>
+                <p class="industry-description">
+                    Comprehensive market intelligence covering commercial aviation, defense systems, 
+                    space technology, and emerging aerospace innovations across global markets.
+                </p>
+            </div>
+            
+            <div class="industry-highlights">
+                <div class="highlight-card">
+                    <h3>Commercial Aviation</h3>
+                    <span>Aircraft, Engines, Avionics</span>
+                </div>
+                <div class="highlight-card">
+                    <h3>Defense Systems</h3>
+                    <span>Military Equipment, Electronics</span>
+                </div>
+                <div class="highlight-card">
+                    <h3>Space Technology</h3>
+                    <span>Satellites, Launch Systems</span>
+                </div>
+                <div class="highlight-card">
+                    <h3>Emerging Tech</h3>
+                    <span>eVTOL, Drones, UAVs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="page-layout">
+            <!-- Industry Filters -->
+            <aside class="industry-filters">
+                <div class="filter-section">
+                    <h3>By Sub-Sector <button class="filter-toggle">−</button></h3>
+                    <div class="filter-options">
+                        <div class="filter-option">
+                            <input type="checkbox" id="commercial-aviation" value="commercial-aviation">
+                            <label for="commercial-aviation">Commercial Aviation</label>
+                            <span class="filter-count">245</span>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="defense-military" value="defense-military">
+                            <label for="defense-military">Defense & Military</label>
+                            <span class="filter-count">189</span>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="space-satellites" value="space-satellites">
+                            <label for="space-satellites">Space & Satellites</label>
+                            <span class="filter-count">134</span>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="unmanned-systems" value="unmanned-systems">
+                            <label for="unmanned-systems">Unmanned Systems (Drones/UAVs)</label>
+                            <span class="filter-count">98</span>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="aircraft-engines" value="aircraft-engines">
+                            <label for="aircraft-engines">Aircraft Engines</label>
+                            <span class="filter-count">67</span>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="avionics-electronics" value="avionics-electronics">
+                            <label for="avionics-electronics">Avionics & Electronics</label>
+                            <span class="filter-count">78</span>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="maintenance-services" value="maintenance-services">
+                            <label for="maintenance-services">Maintenance & Services</label>
+                            <span class="filter-count">56</span>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="business-aviation" value="business-aviation">
+                            <label for="business-aviation">Business & General Aviation</label>
+                            <span class="filter-count">43</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h3>By Application <button class="filter-toggle">−</button></h3>
+                    <div class="filter-options">
+                        <div class="filter-option">
+                            <input type="checkbox" id="passenger-aircraft" value="passenger-aircraft">
+                            <label for="passenger-aircraft">Passenger Aircraft</label>
+                            <span class="filter-count">156</span>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="military-aircraft" value="military-aircraft">
+                            <label for="military-aircraft">Military Aircraft</label>
+                            <span class="filter-count">132</span>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="helicopters" value="helicopters">
+                            <label for="helicopters">Helicopters</label>
+                            <span class="filter-count">89</span>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="business-jets" value="business-jets">
+                            <label for="business-jets">Business Jets</label>
+                            <span class="filter-count">67</span>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="cargo-aircraft" value="cargo-aircraft">
+                            <label for="cargo-aircraft">Cargo Aircraft</label>
+                            <span class="filter-count">54</span>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="satellites" value="satellites">
+                            <label for="satellites">Satellites</label>
+                            <span class="filter-count">98</span>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="launch-vehicles" value="launch-vehicles">
+                            <label for="launch-vehicles">Launch Vehicles</label>
+                            <span class="filter-count">45</span>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="ground-systems" value="ground-systems">
+                            <label for="ground-systems">Ground Systems</label>
+                            <span class="filter-count">78</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h3>By Region <button class="filter-toggle">−</button></h3>
+                    <div class="filter-options">
+                        <div class="filter-option">
+                            <input type="checkbox" id="global" value="global">
+                            <label for="global">Global</label>
+                            <span class="filter-count">298</span>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="north-america" value="north-america">
+                            <label for="north-america">North America</label>
+                            <span class="filter-count">234</span>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="europe" value="europe">
+                            <label for="europe">Europe</label>
+                            <span class="filter-count">189</span>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="asia-pacific" value="asia-pacific">
+                            <label for="asia-pacific">Asia-Pacific</label>
+                            <span class="filter-count">167</span>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="latin-america" value="latin-america">
+                            <label for="latin-america">Latin America</label>
+                            <span class="filter-count">78</span>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="mea" value="mea">
+                            <label for="mea">Middle East & Africa</label>
+                            <span class="filter-count">92</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h3>By Study Period <button class="filter-toggle">−</button></h3>
+                    <div class="filter-options">
+                        <div class="filter-option">
+                            <input type="checkbox" id="2024-2034" value="2024-2034">
+                            <label for="2024-2034">2024-2034</label>
+                            <span class="filter-count">298</span>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="2019-2030" value="2019-2030">
+                            <label for="2019-2030">2019-2030</label>
+                            <span class="filter-count">245</span>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="2020-2030" value="2020-2030">
+                            <label for="2020-2030">2020-2030</label>
+                            <span class="filter-count">189</span>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="2017-2030" value="2017-2030">
+                            <label for="2017-2030">2017-2030</label>
+                            <span class="filter-count">156</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Reports Content -->
+            <section class="reports-content">
+                <!-- Featured Reports -->
+                <div class="featured-reports">
+                    <h2><i class="fas fa-star"></i> Featured Aerospace & Defense Reports</h2>
+                    
+                    <div class="report-card featured">
+                        <div class="industry-tag aerospace">eVTOL Aircraft</div>
+                        <h3 class="report-title">Global eVTOL Aircraft Market</h3>
+                        <div class="report-meta">
+                            <p><strong>Study Period:</strong> 2019 - 2030</p>
+                            <p><strong>Regions Covered:</strong> North America, South America, Europe, Asia Pacific, Middle East, Africa</p>
+                            <p><strong>Major Players:</strong> Joby Aviation Inc., Guangzhou EHang Intelligent Technology Co. Ltd, Archer Aviation Inc., Vertical Aerospace Ltd., Volocopter Technologies GmbH</p>
+                        </div>
+                        <div class="report-highlights">
+                            <span class="highlight">Next-Gen Aviation</span>
+                            <span class="highlight">Urban Mobility</span>
+                            <span class="highlight">Electric Propulsion</span>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn-primary">View Report</button>
+                            <button class="btn-secondary">Request Sample</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls Bar -->
+                <div class="controls-bar">
+                    <div class="results-count">
+                        Showing <span id="resultsCount">758</span> aerospace & defense reports
+                    </div>
+                    <div class="sort-controls">
+                        <select class="sort-select" id="sortSelect">
+                            <option value="relevance">Sort by Relevance</option>
+                            <option value="date">Date Published</option>
+                            <option value="title">Title A-Z</option>
+                            <option value="sub-sector">Sub-Sector</option>
+                        </select>
+                        <div class="view-toggle">
+                            <button class="view-btn active" data-view="grid">
+                                <i class="fas fa-th"></i>
+                            </button>
+                            <button class="view-btn" data-view="list">
+                                <i class="fas fa-list"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reports Grid -->
+                <div class="reports-grid" id="reportsGrid">
+                    <!-- Commercial Aviation Reports -->
+                    <div class="report-card" data-subsector="commercial-aviation" data-region="global">
+                        <div class="industry-tag commercial">Commercial Aviation</div>
+                        <h3 class="report-title">Global Aircraft Engines Market</h3>
+                        <div class="report-meta">
+                            <p><strong>Study Period:</strong> 2019 - 2030</p>
+                            <p><strong>Regions Covered:</strong> Global coverage</p>
+                            <p><strong>Major Players:</strong> General Electric Company, Safran SA, Airbus SE, Northrop Grumman Corporation, Rolls Royce plc</p>
+                        </div>
+                        <div class="report-highlights">
+                            <span class="highlight">Turbofan Engines</span>
+                            <span class="highlight">Fuel Efficiency</span>
+                            <span class="highlight">Next-Gen Propulsion</span>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn-primary">View Report</button>
+                            <button class="btn-secondary">Request Sample</button>
+                        </div>
+                    </div>
+
+                    <div class="report-card" data-subsector="business-aviation" data-region="global">
+                        <div class="industry-tag commercial">Business Aviation</div>
+                        <h3 class="report-title">Global Business Jet Market</h3>
+                        <div class="report-meta">
+                            <p><strong>Study Period:</strong> 2017 - 2030</p>
+                            <p><strong>Regions Covered:</strong> Asia-Pacific, Europe, Middle East and Africa, North America, South America</p>
+                            <p><strong>Major Players:</strong> Bombardier Inc., Dassault Aviation, Embraer, General Dynamics Corporation, Textron Inc.</p>
+                        </div>
+                        <div class="report-highlights">
+                            <span class="highlight">Light Jets</span>
+                            <span class="highlight">Heavy Jets</span>
+                            <span class="highlight">Luxury Aviation</span>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn-primary">View Report</button>
+                            <button class="btn-secondary">Request Sample</button>
+                        </div>
+                    </div>
+
+                    <div class="report-card" data-subsector="avionics-electronics" data-region="global">
+                        <div class="industry-tag aerospace">Avionics</div>
+                        <h3 class="report-title">Global Aircraft Avionics Market</h3>
+                        <div class="report-meta">
+                            <p><strong>Study Period:</strong> 2019 - 2030</p>
+                            <p><strong>Regions Covered:</strong> Global coverage</p>
+                            <p><strong>Major Players:</strong> Honeywell International Inc., Garmin Ltd., L3Harris Technologies Inc., Collins Aerospace (RTX Corporation), Leonardo S.p.A</p>
+                        </div>
+                        <div class="report-highlights">
+                            <span class="highlight">Flight Management</span>
+                            <span class="highlight">Navigation Systems</span>
+                            <span class="highlight">Digital Cockpits</span>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn-primary">View Report</button>
+                            <button class="btn-secondary">Request Sample</button>
+                        </div>
+                    </div>
+
+                    <!-- Defense & Military Reports -->
+                    <div class="report-card" data-subsector="defense-military" data-region="global">
+                        <div class="industry-tag defense">Defense Electronics</div>
+                        <h3 class="report-title">Global Military Electronics Market</h3>
+                        <div class="report-meta">
+                            <p><strong>Study Period:</strong> 2019 - 2030</p>
+                            <p><strong>Regions Covered:</strong> Global coverage</p>
+                            <p><strong>Major Players:</strong> Microchip Technology Inc., BAE Systems plc, Honeywell International Inc., Northrop Grumman Corporation, STMicroelectronics NV</p>
+                        </div>
+                        <div class="report-highlights">
+                            <span class="highlight">Command Systems</span>
+                            <span class="highlight">Radar Technology</span>
+                            <span class="highlight">Electronic Warfare</span>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn-primary">View Report</button>
+                            <button class="btn-secondary">Request Sample</button>
+                        </div>
+                    </div>
+
+                    <div class="report-card" data-subsector="defense-military" data-region="global">
+                        <div class="industry-tag defense">Defense Training</div>
+                        <h3 class="report-title">Global Defense Simulation & Training Market</h3>
+                        <div class="report-meta">
+                            <p><strong>Study Period:</strong> 2020 - 2030</p>
+                            <p><strong>Regions Covered:</strong> Global coverage</p>
+                            <p><strong>Major Players:</strong> Cubic Corporation, L3Harris Technologies Inc., Elbit Systems Ltd., SDT Space & Defence Technologies Inc., Leonardo DRS</p>
+                        </div>
+                        <div class="report-highlights">
+                            <span class="highlight">Virtual Training</span>
+                            <span class="highlight">Combat Simulators</span>
+                            <span class="highlight">AR/VR Technology</span>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn-primary">View Report</button>
+                            <button class="btn-secondary">Request Sample</button>
+                        </div>
+                    </div>
+
+                    <div class="report-card" data-subsector="defense-military" data-region="north-america">
+                        <div class="industry-tag defense">Military Vehicles</div>
+                        <h3 class="report-title">Global Military Vehicle Market</h3>
+                        <div class="report-meta">
+                            <p><strong>Study Period:</strong> 2019 - 2030</p>
+                            <p><strong>Countries:</strong> United States, Canada</p>
+                            <p><strong>Major Players:</strong> Rheinmetall AG, General Dynamics Corporation, Textron Inc., Oshkosh Corporation, BAE Systems plc</p>
+                        </div>
+                        <div class="report-highlights">
+                            <span class="highlight">Armored Vehicles</span>
+                            <span class="highlight">Tactical Vehicles</span>
+                            <span class="highlight">Military Mobility</span>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn-primary">View Report</button>
+                            <button class="btn-secondary">Request Sample</button>
+                        </div>
+                    </div>
+
+                    <!-- Space & Satellites Reports -->
+                    <div class="report-card" data-subsector="space-satellites" data-region="global">
+                        <div class="industry-tag space">Satellites</div>
+                        <h3 class="report-title">Global Satellite Market</h3>
+                        <div class="report-meta">
+                            <p><strong>Study Period:</strong> 2017 - 2030</p>
+                            <p><strong>Regions Covered:</strong> Asia-Pacific, Europe, North America</p>
+                            <p><strong>Major Players:</strong> Airbus SE, China Aerospace Science and Technology Corporation (CASC), Lockheed Martin Corporation, Maxar Technologies Inc., Space Exploration Technologies Corp.</p>
+                        </div>
+                        <div class="report-highlights">
+                            <span class="highlight">Communication Satellites</span>
+                            <span class="highlight">Earth Observation</span>
+                            <span class="highlight">Navigation Systems</span>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn-primary">View Report</button>
+                            <button class="btn-secondary">Request Sample</button>
+                        </div>
+                    </div>
+
+                    <div class="report-card" data-subsector="space-satellites" data-region="global">
+                        <div class="industry-tag space">SATCOM</div>
+                        <h3 class="report-title">Global Satellite Communication Market</h3>
+                        <div class="report-meta">
+                            <p><strong>Study Period:</strong> 2019 - 2030</p>
+                            <p><strong>Regions Covered:</strong> Global coverage</p>
+                            <p><strong>Major Players:</strong> Viasat Inc., Cobham Limited, Maxar Technologies Inc., L3Harris Technologies Inc., Honeywell International Inc.</p>
+                        </div>
+                        <div class="report-highlights">
+                            <span class="highlight">SATCOM Terminals</span>
+                            <span class="highlight">Ground Equipment</span>
+                            <span class="highlight">Maritime SATCOM</span>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn-primary">View Report</button>
+                            <button class="btn-secondary">Request Sample</button>
+                        </div>
+                    </div>
+
+                    <!-- Unmanned Systems Reports -->
+                    <div class="report-card" data-subsector="unmanned-systems" data-region="global">
+                        <div class="industry-tag drones">Drone Delivery</div>
+                        <h3 class="report-title">Global Drone Delivery Market</h3>
+                        <div class="report-meta">
+                            <p><strong>Study Period:</strong> 2019 - 2030</p>
+                            <p><strong>Regions Covered:</strong> Global coverage</p>
+                            <p><strong>Major Players:</strong> Wing Aviation LLC (Alphabet Inc.), Zipline International Inc., Flytrex Inc., SZ DJI Technology Co. Ltd., United Parcel Service of America Inc.</p>
+                        </div>
+                        <div class="report-highlights">
+                            <span class="highlight">Last-Mile Delivery</span>
+                            <span class="highlight">Logistics Drones</span>
+                            <span class="highlight">Urban Air Mobility</span>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn-primary">View Report</button>
+                            <button class="btn-secondary">Request Sample</button>
+                        </div>
+                    </div>
+
+                    <div class="report-card" data-subsector="unmanned-systems" data-region="europe">
+                        <div class="industry-tag drones">Commercial Drones</div>
+                        <h3 class="report-title">Europe Drone Market</h3>
+                        <div class="report-meta">
+                            <p><strong>Study Period:</strong> 2019 - 2030</p>
+                            <p><strong>Countries:</strong> United Kingdom, Germany, France, Spain, Italy, Netherlands, Switzerland, Poland</p>
+                            <p><strong>Major Players:</strong> SZ DJI Technology Co. Ltd., Parrot Drones SAS, Delair SAS, Flyability SA, Skydio Inc.</p>
+                        </div>
+                        <div class="report-highlights">
+                            <span class="highlight">Commercial Applications</span>
+                            <span class="highlight">Military UAVs</span>
+                            <span class="highlight">Civilian Operations</span>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn-primary">View Report</button>
+                            <button class="btn-secondary">Request Sample</button>
+                        </div>
+                    </div>
+
+                    <!-- Regional Military Markets -->
+                    <div class="report-card" data-subsector="defense-military" data-region="asia-pacific">
+                        <div class="industry-tag defense">Military Helicopters</div>
+                        <h3 class="report-title">Asia-Pacific Military Helicopter Market</h3>
+                        <div class="report-meta">
+                            <p><strong>Study Period:</strong> 2019 - 2030</p>
+                            <p><strong>Countries:</strong> China, India, Japan, South Korea, Vietnam, Philippines, Indonesia, Thailand</p>
+                            <p><strong>Major Players:</strong> Airbus SE, Leonardo S.p.A., Lockheed Martin Corporation, The Boeing Company, Textron Inc.</p>
+                        </div>
+                        <div class="report-highlights">
+                            <span class="highlight">Attack Helicopters</span>
+                            <span class="highlight">Transport Helicopters</span>
+                            <span class="highlight">Multi-Role Aircraft</span>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn-primary">View Report</button>
+                            <button class="btn-secondary">Request Sample</button>
+                        </div>
+                    </div>
+
+                    <div class="report-card" data-subsector="defense-military" data-region="north-america">
+                        <div class="industry-tag defense">US Defense</div>
+                        <h3 class="report-title">US Defense Market</h3>
+                        <div class="report-meta">
+                            <p><strong>Study Period:</strong> 2019 - 2030</p>
+                            <p><strong>Country:</strong> United States</p>
+                            <p><strong>Major Players:</strong> General Dynamics Corporation, Lockheed Martin Corporation, The Boeing Company, RTX Corporation, Airbus SE</p>
+                        </div>
+                        <div class="report-highlights">
+                            <span class="highlight">Defense Procurement</span>
+                            <span class="highlight">Military Systems</span>
+                            <span class="highlight">DoD Contracts</span>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn-primary">View Report</button>
+                            <button class="btn-secondary">Request Sample</button>
+                        </div>
+                    </div>
+
+                    <!-- Services & Maintenance Reports -->
+                    <div class="report-card" data-subsector="maintenance-services" data-region="global">
+                        <div class="industry-tag commercial">Aircraft Leasing</div>
+                        <h3 class="report-title">Global Aircraft Leasing Market</h3>
+                        <div class="report-meta">
+                            <p><strong>Study Period:</strong> 2019 - 2030</p>
+                            <p><strong>Regions Covered:</strong> Global coverage</p>
+                            <p><strong>Major Players:</strong> AerCap Holdings N.V., SMBC Aviation Capital, Avolon Aerospace Leasing Limited, Air Lease Corporation, BOC Aviation Limited</p>
+                        </div>
+                        <div class="report-highlights">
+                            <span class="highlight">Operating Leases</span>
+                            <span class="highlight">Finance Leases</span>
+                            <span class="highlight">Fleet Management</span>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn-primary">View Report</button>
+                            <button class="btn-secondary">Request Sample</button>
+                        </div>
+                    </div>
+
+                    <div class="report-card" data-subsector="business-aviation" data-region="global">
+                        <div class="industry-tag commercial">Private Jets</div>
+                        <h3 class="report-title">Private Jet Charter Market</h3>
+                        <div class="report-meta">
+                            <p><strong>Study Period:</strong> 2019 - 2030</p>
+                            <p><strong>Regions Covered:</strong> Global coverage</p>
+                            <p><strong>Major Players:</strong> NetJets IP LLC, VistaJet Group Holding Limited, Air Charter Service Group Limited, Flexjet LLC, Wheels Up Experience Inc.</p>
+                        </div>
+                        <div class="report-highlights">
+                            <span class="highlight">On-Demand Charter</span>
+                            <span class="highlight">Jet Membership</span>
+                            <span class="highlight">Fractional Ownership</span>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn-primary">View Report</button>
+                            <button class="btn-secondary">Request Sample</button>
+                        </div>
+                    </div>
+
+                    <!-- Additional Advanced Technology Reports -->
+                    <div class="report-card" data-subsector="aircraft-engines" data-region="global">
+                        <div class="industry-tag aerospace">Propulsion</div>
+                        <h3 class="report-title">Global Electric Aircraft Propulsion Market</h3>
+                        <div class="report-meta">
+                            <p><strong>Study Period:</strong> 2024 - 2034</p>
+                            <p><strong>Regions Covered:</strong> Global coverage</p>
+                            <p><strong>Major Players:</strong> MagniX, Eviation Aircraft, Heart Aerospace, Wright Electric, Bye Aerospace</p>
+                        </div>
+                        <div class="report-highlights">
+                            <span class="highlight">Electric Motors</span>
+                            <span class="highlight">Battery Technology</span>
+                            <span class="highlight">Sustainable Aviation</span>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn-primary">View Report</button>
+                            <button class="btn-secondary">Request Sample</button>
+                        </div>
+                    </div>
+
+                    <div class="report-card" data-subsector="space-satellites" data-region="global">
+                        <div class="industry-tag space">Commercial Space</div>
+                        <h3 class="report-title">Global Commercial Space Market</h3>
+                        <div class="report-meta">
+                            <p><strong>Study Period:</strong> 2024 - 2034</p>
+                            <p><strong>Regions Covered:</strong> Global coverage</p>
+                            <p><strong>Major Players:</strong> SpaceX, Blue Origin, Virgin Galactic, Rocket Lab, Relativity Space</p>
+                        </div>
+                        <div class="report-highlights">
+                            <span class="highlight">Space Tourism</span>
+                            <span class="highlight">Commercial Launches</span>
+                            <span class="highlight">Reusable Rockets</span>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn-primary">View Report</button>
+                            <button class="btn-secondary">Request Sample</button>
+                        </div>
+                    </div>
+
+                    <div class="report-card" data-subsector="unmanned-systems" data-region="global">
+                        <div class="industry-tag drones">Military UAVs</div>
+                        <h3 class="report-title">Global Military UAV Market</h3>
+                        <div class="report-meta">
+                            <p><strong>Study Period:</strong> 2024 - 2034</p>
+                            <p><strong>Regions Covered:</strong> Global coverage</p>
+                            <p><strong>Major Players:</strong> General Atomics, Northrop Grumman, Boeing, Turkish Aerospace, Israel Aerospace Industries</p>
+                        </div>
+                        <div class="report-highlights">
+                            <span class="highlight">Combat Drones</span>
+                            <span class="highlight">Surveillance UAVs</span>
+                            <span class="highlight">Autonomous Systems</span>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn-primary">View Report</button>
+                            <button class="btn-secondary">Request Sample</button>
+                        </div>
+                    </div>
+
+                    <div class="report-card" data-subsector="avionics-electronics" data-region="global">
+                        <div class="industry-tag aerospace">Avionics</div>
+                        <h3 class="report-title">Global Flight Control Systems Market</h3>
+                        <div class="report-meta">
+                            <p><strong>Study Period:</strong> 2024 - 2034</p>
+                            <p><strong>Regions Covered:</strong> Global coverage</p>
+                            <p><strong>Major Players:</strong> Collins Aerospace, Honeywell, Thales, BAE Systems, Safran Electronics</p>
+                        </div>
+                        <div class="report-highlights">
+                            <span class="highlight">Fly-by-Wire</span>
+                            <span class="highlight">Autopilot Systems</span>
+                            <span class="highlight">Digital Flight Controls</span>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn-primary">View Report</button>
+                            <button class="btn-secondary">Request Sample</button>
+                        </div>
+                    </div>
+
+                    <div class="report-card" data-subsector="maintenance-services" data-region="global">
+                        <div class="industry-tag commercial">MRO Services</div>
+                        <h3 class="report-title">Global Aircraft MRO Market</h3>
+                        <div class="report-meta">
+                            <p><strong>Study Period:</strong> 2024 - 2034</p>
+                            <p><strong>Regions Covered:</strong> Global coverage</p>
+                            <p><strong>Major Players:</strong> Lufthansa Technik, Air France-KLM, GE Aviation, Collins Aerospace, Turkish Technic</p>
+                        </div>
+                        <div class="report-highlights">
+                            <span class="highlight">Predictive Maintenance</span>
+                            <span class="highlight">Engine Overhaul</span>
+                            <span class="highlight">Digital MRO</span>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn-primary">View Report</button>
+                            <button class="btn-secondary">Request Sample</button>
+                        </div>
+                    </div>
+
+                    <div class="report-card" data-subsector="commercial-aviation" data-region="global">
+                        <div class="industry-tag commercial">Air Traffic Management</div>
+                        <h3 class="report-title">Global Air Traffic Management Market</h3>
+                        <div class="report-meta">
+                            <p><strong>Study Period:</strong> 2024 - 2034</p>
+                            <p><strong>Regions Covered:</strong> Global coverage</p>
+                            <p><strong>Major Players:</strong> Thales Group, Raytheon Technologies, Indra Sistemas, NATS, Frequentis</p>
+                        </div>
+                        <div class="report-highlights">
+                            <span class="highlight">NextGen ATM</span>
+                            <span class="highlight">Digital Towers</span>
+                            <span class="highlight">Airport Systems</span>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn-primary">View Report</button>
+                            <button class="btn-secondary">Request Sample</button>
+                        </div>
+                    </div>
+
+                    <div class="report-card" data-subsector="space-satellites" data-region="global">
+                        <div class="industry-tag space">Earth Observation</div>
+                        <h3 class="report-title">Global Earth Observation Satellite Market</h3>
+                        <div class="report-meta">
+                            <p><strong>Study Period:</strong> 2024 - 2034</p>
+                            <p><strong>Regions Covered:</strong> Global coverage</p>
+                            <p><strong>Major Players:</strong> Maxar Technologies, Planet Labs, BlackSky, Airbus Defence and Space, Thales Alenia Space</p>
+                        </div>
+                        <div class="report-highlights">
+                            <span class="highlight">Remote Sensing</span>
+                            <span class="highlight">Geospatial Analytics</span>
+                            <span class="highlight">Climate Monitoring</span>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn-primary">View Report</button>
+                            <button class="btn-secondary">Request Sample</button>
+                        </div>
+                    </div>
+
+                    <div class="report-card" data-subsector="defense-military" data-region="global">
+                        <div class="industry-tag defense">Cybersecurity</div>
+                        <h3 class="report-title">Global Aerospace Cybersecurity Market</h3>
+                        <div class="report-meta">
+                            <p><strong>Study Period:</strong> 2024 - 2034</p>
+                            <p><strong>Regions Covered:</strong> Global coverage</p>
+                            <p><strong>Major Players:</strong> Boeing, Lockheed Martin, Raytheon Technologies, BAE Systems, Thales Group</p>
+                        </div>
+                        <div class="report-highlights">
+                            <span class="highlight">Network Security</span>
+                            <span class="highlight">Data Protection</span>
+                            <span class="highlight">Threat Intelligence</span>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn-primary">View Report</button>
+                            <button class="btn-secondary">Request Sample</button>
+                        </div>
+                    </div>
+
+                    <div class="report-card" data-subsector="aircraft-engines" data-region="global">
+                        <div class="industry-tag aerospace">Sustainable Aviation</div>
+                        <h3 class="report-title">Global Sustainable Aviation Fuel Market</h3>
+                        <div class="report-meta">
+                            <p><strong>Study Period:</strong> 2024 - 2034</p>
+                            <p><strong>Regions Covered:</strong> Global coverage</p>
+                            <p><strong>Major Players:</strong> Neste, Total Energies, Shell, BP, Renewable Jet Fuel LLC</p>
+                        </div>
+                        <div class="report-highlights">
+                            <span class="highlight">Biofuels</span>
+                            <span class="highlight">Carbon Reduction</span>
+                            <span class="highlight">Green Aviation</span>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn-primary">View Report</button>
+                            <button class="btn-secondary">Request Sample</button>
+                        </div>
+                    </div>
+
+                    <div class="report-card" data-subsector="commercial-aviation" data-region="global">
+                        <div class="industry-tag commercial">Airport Infrastructure</div>
+                        <h3 class="report-title">Global Airport Infrastructure Market</h3>
+                        <div class="report-meta">
+                            <p><strong>Study Period:</strong> 2024 - 2034</p>
+                            <p><strong>Regions Covered:</strong> Global coverage</p>
+                            <p><strong>Major Players:</strong> AECOM, Fluor Corporation, Bechtel, Skanska, Vinci Construction</p>
+                        </div>
+                        <div class="report-highlights">
+                            <span class="highlight">Terminal Construction</span>
+                            <span class="highlight">Runway Systems</span>
+                            <span class="highlight">Smart Airports</span>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn-primary">View Report</button>
+                            <button class="btn-secondary">Request Sample</button>
+                        </div>
+                    </div>
+
+                    <div class="report-card" data-subsector="unmanned-systems" data-region="global">
+                        <div class="industry-tag drones">Counter-Drone Systems</div>
+                        <h3 class="report-title">Global Counter-Drone Market</h3>
+                        <div class="report-meta">
+                            <p><strong>Study Period:</strong> 2024 - 2034</p>
+                            <p><strong>Regions Covered:</strong> Global coverage</p>
+                            <p><strong>Major Players:</strong> Lockheed Martin, Raytheon, Israel Aerospace Industries, Thales, Rafael Advanced Defense Systems</p>
+                        </div>
+                        <div class="report-highlights">
+                            <span class="highlight">Detection Systems</span>
+                            <span class="highlight">RF Jammers</span>
+                            <span class="highlight">Kinetic Interceptors</span>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn-primary">View Report</button>
+                            <button class="btn-secondary">Request Sample</button>
+                        </div>
+                    </div>
+
+                    <div class="report-card" data-subsector="space-satellites" data-region="global">
+                        <div class="industry-tag space">Satellite Constellations</div>
+                        <h3 class="report-title">Global Satellite Constellation Market</h3>
+                        <div class="report-meta">
+                            <p><strong>Study Period:</strong> 2024 - 2034</p>
+                            <p><strong>Regions Covered:</strong> Global coverage</p>
+                            <p><strong>Major Players:</strong> SpaceX (Starlink), Amazon (Project Kuiper), OneWeb, Planet Labs, BlackSky</p>
+                        </div>
+                        <div class="report-highlights">
+                            <span class="highlight">Mega-Constellations</span>
+                            <span class="highlight">Broadband Internet</span>
+                            <span class="highlight">Low Earth Orbit</span>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn-primary">View Report</button>
+                            <button class="btn-secondary">Request Sample</button>
+                        </div>
+                    </div>
+
+                    <div class="report-card" data-subsector="defense-military" data-region="global">
+                        <div class="industry-tag defense">Hypersonic Weapons</div>
+                        <h3 class="report-title">Global Hypersonic Weapons Market</h3>
+                        <div class="report-meta">
+                            <p><strong>Study Period:</strong> 2024 - 2034</p>
+                            <p><strong>Regions Covered:</strong> Global coverage</p>
+                            <p><strong>Major Players:</strong> Lockheed Martin, Raytheon Technologies, Boeing, Northrop Grumman, MBDA</p>
+                        </div>
+                        <div class="report-highlights">
+                            <span class="highlight">Hypersonic Missiles</span>
+                            <span class="highlight">Glide Vehicles</span>
+                            <span class="highlight">Defense Applications</span>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn-primary">View Report</button>
+                            <button class="btn-secondary">Request Sample</button>
+                        </div>
+                    </div>
+
+                    <div class="report-card" data-subsector="commercial-aviation" data-region="global">
+                        <div class="industry-tag aerospace">Urban Air Mobility</div>
+                        <h3 class="report-title">Global Urban Air Mobility Market</h3>
+                        <div class="report-meta">
+                            <p><strong>Study Period:</strong> 2024 - 2034</p>
+                            <p><strong>Regions Covered:</strong> Global coverage</p>
+                            <p><strong>Major Players:</strong> Uber Elevate, Joby Aviation, Lilium, EHang, Volocopter</p>
+                        </div>
+                        <div class="report-highlights">
+                            <span class="highlight">Air Taxis</span>
+                            <span class="highlight">Vertiports</span>
+                            <span class="highlight">Smart Cities</span>
+                        </div>
+                        <div class="report-actions">
+                            <button class="btn-primary">View Report</button>
+                            <button class="btn-secondary">Request Sample</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Industry Insights -->
+        <section class="industry-insights">
+            <h2>Aerospace & Defense Market Insights</h2>
+            
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <h3>Market Trends</h3>
+                    <ul>
+                        <li>Electric aviation and eVTOL development</li>
+                        <li>Autonomous systems integration</li>
+                        <li>Space commercialization growth</li>
+                        <li>Defense modernization programs</li>
+                        <li>Sustainable aviation fuel adoption</li>
+                        <li>Digital transformation in aerospace</li>
+                        <li>Advanced manufacturing technologies</li>
+                    </ul>
+                </div>
+                
+                <div class="insight-card">
+                    <h3>Key Drivers</h3>
+                    <ul>
+                        <li>Rising air travel demand</li>
+                        <li>Military modernization investments</li>
+                        <li>Space exploration initiatives</li>
+                        <li>UAV adoption across sectors</li>
+                        <li>Urban air mobility development</li>
+                        <li>Cybersecurity concerns</li>
+                        <li>Environmental regulations</li>
+                    </ul>
+                </div>
+                
+                <div class="insight-card">
+                    <h3>Regional Leaders</h3>
+                    <ul>
+                        <li>North America: Defense spending leader</li>
+                        <li>Europe: Commercial aviation hub</li>
+                        <li>Asia-Pacific: Fastest growing market</li>
+                        <li>Middle East: Military procurement focus</li>
+                        <li>Latin America: Emerging opportunities</li>
+                        <li>Africa: Infrastructure development</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Key Players -->
+    <section class="key-players">
+        <div class="container">
+            <h2>Major Industry Players</h2>
+            
+            <div class="players-categories">
+                <div class="player-category">
+                    <h3>Aerospace Manufacturers</h3>
+                    <div class="players-list">
+                        <span class="player-tag">Boeing</span>
+                        <span class="player-tag">Airbus</span>
+                        <span class="player-tag">Embraer</span>
+                        <span class="player-tag">Bombardier</span>
+                        <span class="player-tag">Textron Aviation</span>
+                        <span class="player-tag">Dassault Aviation</span>
+                    </div>
+                </div>
+                
+                <div class="player-category">
+                    <h3>Defense Contractors</h3>
+                    <div class="players-list">
+                        <span class="player-tag">Lockheed Martin</span>
+                        <span class="player-tag">Northrop Grumman</span>
+                        <span class="player-tag">General Dynamics</span>
+                        <span class="player-tag">BAE Systems</span>
+                        <span class="player-tag">RTX Corporation</span>
+                        <span class="player-tag">Leonardo</span>
+                    </div>
+                </div>
+                
+                <div class="player-category">
+                    <h3>Engine Manufacturers</h3>
+                    <div class="players-list">
+                        <span class="player-tag">General Electric</span>
+                        <span class="player-tag">Safran</span>
+                        <span class="player-tag">Rolls-Royce</span>
+                        <span class="player-tag">RTX Corporation</span>
+                        <span class="player-tag">Honeywell</span>
+                        <span class="player-tag">MTU Aero Engines</span>
+                    </div>
+                </div>
+                
+                <div class="player-category">
+                    <h3>Space Companies</h3>
+                    <div class="players-list">
+                        <span class="player-tag">SpaceX</span>
+                        <span class="player-tag">Blue Origin</span>
+                        <span class="player-tag">Virgin Galactic</span>
+                        <span class="player-tag">Rocket Lab</span>
+                        <span class="player-tag">Maxar Technologies</span>
+                        <span class="player-tag">Planet Labs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Search functionality
+        const searchInput = document.getElementById('searchInput');
+        const reportsGrid = document.getElementById('reportsGrid');
+        const reportCards = document.querySelectorAll('.report-card');
+        const resultsCount = document.getElementById('resultsCount');
+
+        searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            let visibleCount = 0;
+
+            reportCards.forEach(card => {
+                const title = card.querySelector('.report-title').textContent.toLowerCase();
+                const meta = card.querySelector('.report-meta').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || meta.includes(searchTerm)) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            resultsCount.textContent = visibleCount;
+        });
+
+        // Filter functionality
+        const filterCheckboxes = document.querySelectorAll('.filter-option input[type="checkbox"]');
+        
+        filterCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', applyFilters);
+        });
+
+        function applyFilters() {
+            const selectedSubsectors = [];
+            const selectedRegions = [];
+            
+            // Get selected filters
+            document.querySelectorAll('[id*="commercial-aviation"]:checked, [id*="defense-military"]:checked, [id*="space-satellites"]:checked, [id*="unmanned-systems"]:checked, [id*="aircraft-engines"]:checked, [id*="avionics-electronics"]:checked, [id*="maintenance-services"]:checked, [id*="business-aviation"]:checked').forEach(cb => {
+                selectedSubsectors.push(cb.value);
+            });
+            
+            document.querySelectorAll('#global:checked, #north-america:checked, #europe:checked, #asia-pacific:checked, #latin-america:checked, #mea:checked').forEach(cb => {
+                selectedRegions.push(cb.value);
+            });
+
+            let visibleCount = 0;
+
+            reportCards.forEach(card => {
+                const subsector = card.dataset.subsector;
+                const region = card.dataset.region;
+                
+                const subsectorMatch = selectedSubsectors.length === 0 || selectedSubsectors.includes(subsector);
+                const regionMatch = selectedRegions.length === 0 || selectedRegions.includes(region);
+                
+                if (subsectorMatch && regionMatch) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            resultsCount.textContent = visibleCount;
+        }
+
+        // Sort functionality
+        const sortSelect = document.getElementById('sortSelect');
+        
+        sortSelect.addEventListener('change', function() {
+            const sortBy = this.value;
+            const cardsArray = Array.from(reportCards);
+            
+            cardsArray.sort((a, b) => {
+                switch(sortBy) {
+                    case 'title':
+                        return a.querySelector('.report-title').textContent.localeCompare(b.querySelector('.report-title').textContent);
+                    case 'sub-sector':
+                        return a.dataset.subsector.localeCompare(b.dataset.subsector);
+                    default:
+                        return 0;
+                }
+            });
+            
+            cardsArray.forEach(card => reportsGrid.appendChild(card));
+        });
+
+        // View toggle functionality
+        const viewButtons = document.querySelectorAll('.view-btn');
+        
+        viewButtons.forEach(btn => {
+            btn.addEventListener('click', function() {
+                viewButtons.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                const view = this.dataset.view;
+                if (view === 'list') {
+                    reportsGrid.style.gridTemplateColumns = '1fr';
+                } else {
+                    reportsGrid.style.gridTemplateColumns = 'repeat(auto-fill, minmax(400px, 1fr))';
+                }
+            });
+        });
+
+        // Filter section toggle
+        document.querySelectorAll('.filter-toggle').forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                const options = this.parentElement.nextElementSibling;
+                const isVisible = options.style.display !== 'none';
+                
+                if (isVisible) {
+                    options.style.display = 'none';
+                    this.textContent = '+';
+                } else {
+                    options.style.display = 'flex';
+                    this.textContent = '−';
+                }
+            });
+        });
+
+        // Animate counter on page load
+        function animateCounter(element, target) {
+            let current = 0;
+            const increment = target / 100;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                element.textContent = Math.floor(current);
+            }, 20);
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            const reportCountElement = document.getElementById('reportCount');
+            animateCounter(reportCountElement, 758);
+            
+            // Add hover effects to cards
+            reportCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-8px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(-5px)';
+                });
+            });
+
+            // Add hover effects to highlight cards
+            document.querySelectorAll('.highlight-card').forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-8px) scale(1.02)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(-5px) scale(1)';
+                });
+            });
+        });
+
+        // Report action buttons
+        document.querySelectorAll('.btn-primary, .btn-secondary').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const originalText = this.textContent;
+                this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
+                this.disabled = true;
+                
+                setTimeout(() => {
+                    this.innerHTML = '<i class="fas fa-check"></i> Done!';
+                    
+                    setTimeout(() => {
+                        this.textContent = originalText;
+                        this.disabled = false;
+                    }, 1500);
+                }, 2000);
+            });
+        });
+
+        // Player tag hover effects
+        document.querySelectorAll('.player-tag').forEach(tag => {
+            tag.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-3px) scale(1.05)';
+            });
+            
+            tag.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(-2px) scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>

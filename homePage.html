@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market-I-Quest - Precise Market Intelligence and Advisory</title>
+    <meta name="description" content="Market-I-Quest provides precise market intelligence and advisory services. 22831 reports across 100+ industry segments, serving 6000+ enterprises worldwide.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-navy: #1B365D;
+            --primary-orange: #E67E22;
+            --light-gray: #f8f9fa;
+            --medium-gray: #6c757d;
+            --dark-gray: #333;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .logo-miq {
+            font-size: 2rem;
+            margin-right: 0.5rem;
+        }
+
+        .logo-mi {
+            color: var(--primary-navy);
+        }
+
+        .logo-q {
+            color: var(--primary-orange);
+        }
+
+        .company-name {
+            color: var(--primary-navy);
+            font-size: 0.9rem;
+            margin-left: 0.5rem;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--dark-gray);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-orange);
+        }
+
+        .cta-button {
+            background: var(--primary-orange);
+            color: var(--white);
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #d35400;
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary-navy);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--white) 0%, var(--light-gray) 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--primary-navy);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            color: var(--medium-gray);
+            margin-bottom: 2rem;
+        }
+
+        .certification-badge {
+            display: inline-block;
+            background: var(--primary-orange);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        /* Clients Section */
+        .clients {
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .clients h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            color: var(--primary-navy);
+            margin-bottom: 2rem;
+        }
+
+        .clients-description {
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--medium-gray);
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            line-height: 1.8;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 2rem;
+            background: var(--light-gray);
+            border-radius: 10px;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-orange);
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: var(--medium-gray);
+            margin-top: 0.5rem;
+        }
+
+        .client-logos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .client-logo {
+            background: var(--light-gray);
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+            color: var(--medium-gray);
+            transition: transform 0.3s;
+        }
+
+        .client-logo:hover {
+            transform: translateY(-5px);
+        }
+
+        .view-clients-btn {
+            display: block;
+            width: fit-content;
+            margin: 2rem auto;
+            color: var(--primary-orange);
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid var(--primary-orange);
+            padding: 0.8rem 2rem;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        .view-clients-btn:hover {
+            background: var(--primary-orange);
+            color: var(--white);
+        }
+
+        /* Industry Reports & Custom Research Sections */
+        .section-alt {
+            padding: 80px 0;
+            background: var(--light-gray);
+        }
+
+        .section-regular {
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .section-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .section-content.reverse {
+            direction: rtl;
+        }
+
+        .section-content.reverse > * {
+            direction: ltr;
+        }
+
+        .section-icon {
+            font-size: 8rem;
+            color: var(--primary-orange);
+            text-align: center;
+        }
+
+        .section-text h3 {
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            color: var(--primary-orange);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .section-text h2 {
+            font-size: 2.2rem;
+            color: var(--primary-navy);
+            margin-bottom: 1.5rem;
+            line-height: 1.3;
+        }
+
+        .section-text p {
+            font-size: 1.1rem;
+            color: var(--medium-gray);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .section-link {
+            color: var(--primary-orange);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .section-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Why Us Section */
+        .why-us {
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .why-us h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            color: var(--primary-navy);
+            margin-bottom: 3rem;
+        }
+
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+
+        .advantage-card {
+            text-align: center;
+            padding: 2rem;
+            background: var(--light-gray);
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+
+        .advantage-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .advantage-icon {
+            font-size: 3rem;
+            color: var(--primary-orange);
+            margin-bottom: 1.5rem;
+        }
+
+        .advantage-card h3 {
+            font-size: 1.4rem;
+            color: var(--primary-navy);
+            margin-bottom: 1rem;
+        }
+
+        .advantage-card p {
+            color: var(--medium-gray);
+            line-height: 1.6;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 80px 0;
+            background: var(--light-gray);
+        }
+
+        .testimonials h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            color: var(--primary-navy);
+            margin-bottom: 3rem;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .testimonial-icon {
+            font-size: 2rem;
+            color: var(--primary-orange);
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: var(--medium-gray);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--primary-navy);
+            margin-bottom: 0.5rem;
+        }
+
+        .testimonial-position {
+            color: var(--medium-gray);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .recommendation-link {
+            color: var(--primary-orange);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .recommendation-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Final CTA Section */
+        .final-cta {
+            padding: 80px 0;
+            background: var(--primary-navy);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .final-cta p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+
+        .final-cta .cta-button {
+            font-size: 1.1rem;
+            padding: 1rem 2rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .nav-menu {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .section-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .section-icon {
+                font-size: 4rem;
+            }
+
+            .advantages-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .client-logos {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .hero {
+                padding: 100px 0 60px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .client-logos {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Loading Animation */
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="container">
+            <div class="nav-container">
+                <div class="logo">
+                    <div class="logo-miq">
+                        <span class="logo-mi">Mi</span><span class="logo-q">Q</span>
+                    </div>
+                    <div class="company-name">Market-I-Quest</div>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#industry-reports">Industry Reports</a></li>
+                    <li><a href="#custom-research">Custom Research</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#clients">Clients</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                
+                <a href="#contact" class="cta-button">Talk To Our Analysts</a>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero fade-in">
+        <div class="container">
+            <h1>Precise market intelligence and advisory.</h1>
+            <p>22831 reports across 100+ industry segments exhaustively covered.</p>
+            <div class="certification-badge">
+                <i class="fas fa-award"></i> Great place to work certified
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients">
+        <div class="container">
+            <h2>Providing insights to 6000+ enterprises across 100+ countries.</h2>
+            
+            <div class="clients-description">
+                <p>We are a fully revenue-funded organization, since our founding in 2014. To date, we have partnered with 6000+ enterprises across 20+ industries, to deliver precise data and actionable insights in over 10000 projects.</p>
+                
+                <p>Our domain-specific teams of research experts continuously track markets, providing our clients the competitive edge through high-quality market intelligence.</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">6000+</div>
+                    <div class="stat-label">Enterprises</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Countries</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label">Industries</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10000+</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+            </div>
+
+            <div class="client-logos">
+                <div class="client-logo">Microsoft</div>
+                <div class="client-logo">Google</div>
+                <div class="client-logo">Amazon</div>
+                <div class="client-logo">IBM</div>
+                <div class="client-logo">Oracle</div>
+                <div class="client-logo">Samsung</div>
+                <div class="client-logo">Apple</div>
+                <div class="client-logo">Intel</div>
+            </div>
+
+            <a href="#" class="view-clients-btn">View clients</a>
+        </div>
+    </section>
+
+    <!-- Industry Reports Section -->
+    <section id="industry-reports" class="section-alt">
+        <div class="container">
+            <div class="section-content">
+                <div class="section-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="section-text">
+                    <h3>Industry Reports</h3>
+                    <h2>Gain a deeper understanding of global markets.</h2>
+                    <p>Get access to defining indicators and understand how trends shape the future of markets. Our set of 17,000+ reports cover more than 20 industry verticals.</p>
+                    <p>In each report we break down and analyze the market by segments, understand the prevailing dynamics and study the companies operating in these spaces, to finally arrive at solutions that help you have the competitive advantage.</p>
+                    <a href="#" class="section-link">View reports →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Research Section -->
+    <section id="custom-research" class="section-regular">
+        <div class="container">
+            <div class="section-content reverse">
+                <div class="section-icon">
+                    <i class="fas fa-users-cog"></i>
+                </div>
+                <div class="section-text">
+                    <h3>Custom Research</h3>
+                    <h2>Get insights before anyone else can.</h2>
+                    <p>A dedicated team of highly talented analysts will break down your specific business objectives and draw up tailor-made solutions.</p>
+                    <p>With distributed expertise and continuous support, we become a part of your growth. Our global network of experts provides real-time inputs from the field, giving you sound insights into industry changes as and when they happen.</p>
+                    <a href="#" class="section-link">Explore More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section id="about" class="why-us">
+        <div class="container">
+            <h2>The Market-I-Quest Advantage</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Distributed Expertise</h3>
+                    <p>No organization can seemingly hire all the necessary expertise to answer every business problem. We realize this challenge and turn it into our advantage by using a distributed expertise model.</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Strategic Location</h3>
+                    <p>We believe our location in India is of strategic advantage to you. Without the overheads of other firms, we can get you intelligence at the level of accuracy you deserve, at a significantly lower cost to your organization.</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Flash Delivery</h3>
+                    <p>With our vast database of market intelligence and an ever-growing network of experts across the value chain, we make sure you get top-notch solutions with swift turnarounds that suit your deadlines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">"Market-I-Quest provided comprehensive market analysis that helped us make strategic decisions in the construction equipment sector. Their insights were invaluable for our expansion plans."</p>
+                    <div class="testimonial-author">Yosuke Mitsui</div>
+                    <div class="testimonial-position">Senior Associate, Construction Equipment Sales & Marketing, Sumitomo Corporation</div>
+                    <a href="#" class="recommendation-link">
+                        <i class="fas fa-file-pdf"></i>
+                        Letter of recommendation →
+                    </a>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">"The strategic planning insights from Market-I-Quest have been instrumental in our market positioning. Their analytical approach and attention to detail exceeded our expectations."</p>
+                    <div class="testimonial-author">Sarah Al Salem</div>
+                    <div class="testimonial-position">Strategy and Planning Manager, Al Safi Danone</div>
+                    <a href="#" class="recommendation-link">
+                        <i class="fas fa-file-pdf"></i>
+                        Letter of recommendation →
+                    </a>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">"Market-I-Quest's market analysis capabilities are exceptional. They provided us with actionable insights that directly impacted our European market strategy."</p>
+                    <div class="testimonial-author">Thierry Roedelé</div>
+                    <div class="testimonial-position">Senior Manager Market Analysis, Circle K Europe</div>
+                    <a href="#" class="recommendation-link">
+                        <i class="fas fa-file-pdf"></i>
+                        Letter of recommendation →
+                    </a>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">"Working with Market-I-Quest has been a remarkable experience. Their deep understanding of market dynamics and professional approach made them our trusted advisory partner."</p>
+                    <div class="testimonial-author">Erry Herjuno</div>
+                    <div class="testimonial-position">Counsellor, Embassy of the Republic of Indonesia</div>
+                    <a href="#" class="recommendation-link">
+                        <i class="fas fa-file-pdf"></i>
+                        Letter of recommendation →
+                    </a>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">"Market-I-Quest delivered comprehensive go-to-market strategies that helped us navigate complex global markets. Their expertise is unmatched in the industry."</p>
+                    <div class="testimonial-author">Lawrence Roberts</div>
+                    <div class="testimonial-position">Senior Global Manager - Strategic Go-to-Market, Global Tech Company</div>
+                    <a href="#" class="recommendation-link">
+                        <i class="fas fa-file-pdf"></i>
+                        Letter of recommendation →
+                    </a>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">"The market research and analysis provided by Market-I-Quest have been crucial for our business development. Their thorough approach and timely delivery are commendable."</p>
+                    <div class="testimonial-author">Lidiya Chung</div>
+                    <div class="testimonial-position">Marketing Research Analyst, Greenway Technology Co., Ltd.</div>
+                    <a href="#" class="recommendation-link">
+                        <i class="fas fa-file-pdf"></i>
+                        Letter of recommendation →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="contact" class="final-cta">
+        <div class="container">
+            <h2>Tailor made solutions just for you.</h2>
+            <p>Our polygonal approach streamlines all research and addresses your specific needs. We provide you with customized, actionable market insights across geocentric and customer-centric markets.</p>
+            <a href="#" class="cta-button">Talk To Our Analysts</a>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Header shadow on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.15)';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            }
+        });
+
+        // Counter animation for stats
+        const animateCounters = () => {
+            const counters = document.querySelectorAll('.stat-number');
+            counters.forEach(counter => {
+                const target = parseInt(counter.textContent.replace(/\D/g, ''));
+                const increment = target / 100;
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    
+                    const suffix = counter.textContent.replace(/[0-9]/g, '');
+                    counter.textContent = Math.floor(current) + suffix;
+                }, 30);
+            });
+        };
+
+        // Trigger counter animation when stats section is visible
+        const statsSection = document.querySelector('.stats-grid');
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        });
+
+        if (statsSection) {
+            statsObserver.observe(statsSection);
+        }
+    </script>
+</body>
+</html>
