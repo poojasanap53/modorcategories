@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Your Trusted Market Intelligence Partner | Market-I-Quest</title>
+    <meta name="description" content="Market-I-Quest: Leading market intelligence firm with 18,000+ research reports, serving Fortune 500 companies across 150+ countries. Founded 2014.">
+    <meta name="keywords" content="market intelligence, market research, consulting, industry analysis, business intelligence">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        .header {
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo-text {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .logo-text .mi {
+            color: #1B365D;
+        }
+
+        .logo-text .q {
+            color: #E67E22;
+        }
+
+        .company-name {
+            font-size: 14px;
+            color: #1B365D;
+            margin-left: 10px;
+            font-weight: normal;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #1B365D;
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-menu a:hover {
+            color: #E67E22;
+        }
+
+        .nav-menu a.active {
+            color: #E67E22;
+            font-weight: 600;
+        }
+
+        .nav-menu a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #E67E22;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            background: #f8f9fa;
+            padding: 15px 0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .breadcrumb a {
+            color: #1B365D;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            color: #E67E22;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, #1B365D 0%, #4A90E2 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 20px;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            opacity: 0.95;
+        }
+
+        /* Company Overview Section */
+        .overview-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+
+        .section-title {
+            font-size: 36px;
+            color: #1B365D;
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: 700;
+        }
+
+        .story-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+
+        .story-content h3 {
+            color: #1B365D;
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .story-item {
+            margin-bottom: 25px;
+        }
+
+        .story-label {
+            color: #E67E22;
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .story-text {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        /* Statistics Section */
+        .stats-section {
+            background: #f8f9fa;
+            padding: 60px 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .stat-card {
+            text-align: center;
+            background: white;
+            padding: 40px 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 42px;
+            font-weight: bold;
+            color: #E67E22;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .stat-label {
+            color: #1B365D;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        /* Industry Expertise Section */
+        .expertise-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .industries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .industry-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .industry-card:hover {
+            border-color: #E67E22;
+            background: white;
+            box-shadow: 0 8px 25px rgba(230, 126, 34, 0.15);
+            transform: translateY(-3px);
+        }
+
+        .industry-icon {
+            width: 60px;
+            height: 60px;
+            background: #E67E22;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 24px;
+            color: white;
+        }
+
+        .industry-name {
+            color: #1B365D;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        /* Services Section */
+        .services-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-title {
+            color: #1B365D;
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .service-subtitle {
+            color: #E67E22;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .service-description {
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .service-features {
+            list-style: none;
+        }
+
+        .service-features li {
+            color: #555;
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .service-features li::before {
+            content: "✓";
+            color: #E67E22;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Leadership Section */
+        .leadership-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .team-member {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .team-member:hover {
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            transform: translateY(-5px);
+        }
+
+        .member-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #1B365D, #4A90E2);
+            margin: 0 auto 20px;
+            border: 4px solid #E67E22;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .member-name {
+            color: #1B365D;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .member-title {
+            color: #E67E22;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .member-bio {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        /* Culture Section */
+        .culture-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .culture-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 50px;
+        }
+
+        .culture-content {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .culture-content h3 {
+            color: #1B365D;
+            font-size: 24px;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .culture-item {
+            margin-bottom: 20px;
+        }
+
+        .culture-item strong {
+            color: #E67E22;
+            font-weight: 600;
+        }
+
+        .culture-item p {
+            color: #666;
+            margin-top: 5px;
+            line-height: 1.6;
+        }
+
+        /* Testimonials Section */
+        .testimonials-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .testimonial-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 5px solid #E67E22;
+            transition: transform 0.3s;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .testimonial-text {
+            color: #555;
+            font-style: italic;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .testimonial-text::before {
+            content: """;
+            color: #E67E22;
+            font-size: 36px;
+            line-height: 1;
+        }
+
+        .testimonial-text::after {
+            content: """;
+            color: #E67E22;
+            font-size: 36px;
+            line-height: 1;
+        }
+
+        .testimonial-author {
+            color: #1B365D;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .testimonial-company {
+            color: #E67E22;
+            font-weight: 500;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 80px 0;
+            background: #1B365D;
+            color: white;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 50px;
+        }
+
+        .contact-info h3 {
+            color: #E67E22;
+            font-size: 24px;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .contact-item {
+            margin-bottom: 20px;
+        }
+
+        .contact-label {
+            color: #E67E22;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .contact-value {
+            color: #ddd;
+            font-size: 16px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: #E67E22;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .social-link:hover {
+            background: #d35400;
+            transform: translateY(-2px);
+        }
+
+        .contact-form {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #E67E22;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255,255,255,0.9);
+            color: #333;
+        }
+
+        .form-group textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: #E67E22;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #d35400;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        .footer {
+            background: #0f1f2a;
+            color: white;
+            padding: 40px 0 20px 0;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h4 {
+            color: #E67E22;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .footer-section a {
+            color: #ddd;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: #E67E22;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #4A90E2;
+            padding-top: 20px;
+            text-align: center;
+            color: #ddd;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .nav-menu {
+                flex-wrap: wrap;
+                gap: 15px;
+                justify-content: center;
+            }
+
+            .hero-title {
+                font-size: 32px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .story-grid,
+            .culture-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .team-grid,
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animations */
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .counter {
+            font-weight: bold;
+            color: #E67E22;
+        }
+
+        /* Back to top button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #E67E22;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+            z-index: 1000;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: #d35400;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <div class="logo-text">
+                        <span class="mi">Mi</span><span class="q">Q</span>
+                    </div>
+                    <div class="company-name">Market-I-Quest</div>
+                </a>
+                
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#industry-reports">Industry Reports</a></li>
+                        <li><a href="#consulting">Consulting Services</a></li>
+                        <li><a href="#about" class="active">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="#home">Home</a> &gt; About Us
+        </div>
+    </div>
+
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">Your Trusted Market Intelligence Partner</h1>
+            <p class="hero-subtitle">
+                We are a leading market intelligence firm, built on over a decade of trusted insights and proven industry expertise. We began with a clear vision to provide actionable, fact-based insights that drive better decisions and help shape the future of industries worldwide. Today, we're breaking the boundaries of market intelligence by leveraging AI, next-generation analytics, and deep industry expertise.
+            </p>
+        </div>
+    </section>
+
+    <section class="overview-section">
+        <div class="container">
+            <h2 class="section-title">Our Story</h2>
+            <div class="story-grid fade-in">
+                <div class="story-content">
+                    <h3>Company Foundation</h3>
+                    <div class="story-item">
+                        <div class="story-label">Founded:</div>
+                        <div class="story-text">2014 with a visionary mission to comprehensively chart intricate global business ecosystems</div>
+                    </div>
+                    <div class="story-item">
+                        <div class="story-label">Vision:</div>
+                        <div class="story-text">To provide actionable, fact-based insights that drive better decisions and help shape the future of industries worldwide</div>
+                    </div>
+                    <div class="story-item">
+                        <div class="story-label">Mission:</div>
+                        <div class="story-text">Breaking the boundaries of market intelligence by leveraging AI, next-generation analytics, and deep industry expertise</div>
+                    </div>
+                </div>
+                <div class="story-content">
+                    <h3>Growth & Recognition</h3>
+                    <div class="story-item">
+                        <div class="story-label">Revenue Model:</div>
+                        <div class="story-text">Fully revenue-funded organization since founding, ensuring independence and client-focused approach</div>
+                    </div>
+                    <div class="story-item">
+                        <div class="story-label">Recognition:</div>
+                        <div class="story-text">Certified Great Place to Work for three consecutive years, reflecting our commitment to employee excellence</div>
+                    </div>
+                    <div class="story-item">
+                        <div class="story-label">Quality Standards:</div>
+                        <div class="story-text">ISO certified with Market Research Society membership, ensuring highest industry standards</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid fade-in">
+                <div class="stat-card">
+                    <span class="stat-number counter" data-count="18000">0</span>
+                    <div class="stat-label">Research Reports Published</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number counter" data-count="6000">0</span>
+                    <div class="stat-label">Enterprises Partnered With</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number counter" data-count="550">0</span>
+                    <div class="stat-label">Domain Experts & Specialists</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number counter" data-count="150">0</span>
+                    <div class="stat-label">Countries Coverage</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number counter" data-count="100">0</span>
+                    <div class="stat-label">Industries Tracked</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number counter" data-count="10000">0</span>
+                    <div class="stat-label">Projects Delivered</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">60%</span>
+                    <div class="stat-label">Fortune 500 Companies as Clients</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number counter" data-count="20">0</span>
+                    <div class="stat-label">Industries Expertise</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="expertise-section">
+        <div class="container">
+            <h2 class="section-title">Our Coverage Areas</h2>
+            <div class="industries-grid fade-in">
+                <div class="industry-card">
+                    <div class="industry-icon">✈</div>
+                    <div class="industry-name">Aerospace & Defense</div>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">🌾</div>
+                    <div class="industry-name">Agriculture & Food</div>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">⚙</div>
+                    <div class="industry-name">Automation & Manufacturing</div>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">⚡</div>
+                    <div class="industry-name">Energy & Power</div>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">🏥</div>
+                    <div class="industry-name">Healthcare & Pharmaceuticals</div>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">💻</div>
+                    <div class="industry-name">Information Technology</div>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">📡</div>
+                    <div class="industry-name">Telecommunications</div>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">🔬</div>
+                    <div class="industry-name">Semiconductors</div>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">🚗</div>
+                    <div class="industry-name">Automotive</div>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">🧪</div>
+                    <div class="industry-name">Chemicals & Materials</div>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">🛍</div>
+                    <div class="industry-name">Consumer Goods</div>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">💰</div>
+                    <div class="industry-name">Financial Services</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="container">
+            <h2 class="section-title">What We Offer</h2>
+            <div class="services-grid fade-in">
+                <div class="service-card">
+                    <h3 class="service-title">Syndicated Reports</h3>
+                    <div class="service-subtitle">Ready-to-Use Market Insights</div>
+                    <p class="service-description">
+                        Comprehensive, research-backed reports designed to provide immediate access to critical market intelligence across various industries and regions.
+                    </p>
+                    <ul class="service-features">
+                        <li>Detailed coverage and expert insights into various markets</li>
+                        <li>Cost-effective solutions designed for broader industry audience</li>
+                        <li>Comprehensive analysis of market attractiveness, potential, and competitive landscape</li>
+                        <li>Regular updates and trend analysis</li>
+                        <li>Immediate access to validated market data</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3 class="service-title">Custom Reports</h3>
+                    <div class="service-subtitle">Tailored Intelligence for Specific Needs</div>
+                    <p class="service-description">
+                        Bespoke research solutions crafted to address your unique business challenges and strategic requirements with precision and depth.
+                    </p>
+                    <ul class="service-features">
+                        <li>Ideal for organizations with complex or unique business requirements</li>
+                        <li>Bespoke research methodologies tailored to your objectives</li>
+                        <li>Dedicated project management and expert consultation</li>
+                        <li>Flexible scope and timeline adaptation</li>
+                        <li>Proprietary insights and competitive advantages</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3 class="service-title">Consulting Services</h3>
+                    <div class="service-subtitle">Strategic Advisory</div>
+                    <p class="service-description">
+                        Expert guidance and strategic insights to help you navigate complex market dynamics and make informed business decisions.
+                    </p>
+                    <ul class="service-features">
+                        <li>Market entry strategies and opportunity assessment</li>
+                        <li>Competitive intelligence and benchmarking</li>
+                        <li>Feasibility studies and risk analysis</li>
+                        <li>Investment intelligence and due diligence</li>
+                        <li>Strategic market inputs and scenario planning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="leadership-section">
+        <div class="container">
+            <h2 class="section-title">Meet Our Leadership</h2>
+            <div class="team-grid fade-in">
+                <div class="team-member">
+                    <div class="member-photo">JS</div>
+                    <div class="member-name">James Smith</div>
+                    <div class="member-title">Chief Executive Officer</div>
+                    <div class="member-bio">
+                        Founded Market-I-Quest with clear vision to help businesses navigate global trends. Mathematician by training with analytical rigor and strategic foresight. AB in Mathematics from Harvard University, Scholar and Fellow. Led company growth from startup to 550+ member team with proven track record in scaling research organizations.
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo">MJ</div>
+                    <div class="member-name">Maria Johnson</div>
+                    <div class="member-title">Director of Human Resources</div>
+                    <div class="member-bio">
+                        Joined Market-I-Quest in 2017, leading HR since 2021. Previously headed HR at digital technology services company managing 1000+ employees. Bachelor's in Computer Science, MBA from Wharton School. Oversees company growth and strategic hires, fostering our Great Place to Work culture.
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo">DL</div>
+                    <div class="member-name">Dr. David Lee</div>
+                    <div class="member-title">Director of Research Operations</div>
+                    <div class="member-bio">
+                        20+ years of experience in market intelligence across Fortune 500 companies. Previously at competitive intelligence practice for 6 years, former head of research division at top-tier consulting firm. Started career at McKinsey & Company. PhD in Economics, MBA specialization in Strategic Management.
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo">SP</div>
+                    <div class="member-name">Sarah Patel</div>
+                    <div class="member-title">Head of Technology, Media & Telecom</div>
+                    <div class="member-bio">
+                        Extensive experience in technology scouting and digital transformation across emerging markets. Expertise in market-entry strategies and business intelligence data models. Previously consultant with leading Audio-Visual Integration Company. Engineering (Computer Science) and MBA background from Stanford.
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo">RK</div>
+                    <div class="member-name">Dr. Robert Kim</div>
+                    <div class="member-title">Head of Healthcare Practice</div>
+                    <div class="member-bio">
+                        12+ years pharmaceutical and healthcare industry experience spanning regulatory affairs to market access. Laboratory testing, R&D, Market Research, Competitive Intelligence background. Former Scientist and Medical Counsellor at leading pharma companies. Bachelor's in Science, Master's in Biomedical Genetics, MBA.
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo">AB</div>
+                    <div class="member-name">Anna Brown</div>
+                    <div class="member-title">Head of Agriculture & Food Practice</div>
+                    <div class="member-bio">
+                        13+ years studying Agriculture and Food Industry across global markets. Expertise in agricultural value chains from seed to fork, sustainability trends. Market estimation, feasibility studies, food logistics specialist. Background in Sales, Marketing, and Strategic Consulting for agribusiness leaders.
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo">TC</div>
+                    <div class="member-name">Thomas Chen</div>
+                    <div class="member-title">Head of Chemicals & Energy</div>
+                    <div class="member-bio">
+                        10+ years in Chemicals and Energy Industry dynamics across upstream and downstream markets. Market sizing, feasibility studies, competitive intelligence expert in specialty chemicals, metals, plastics. Strategic insights and business intelligence focus for energy transition and sustainability markets.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="culture-section">
+        <div class="container">
+            <h2 class="section-title">Our Values & Culture</h2>
+            <div class="culture-grid fade-in">
+                <div class="culture-content">
+                    <h3>Our Values</h3>
+                    <div class="culture-item">
+                        <strong>People First Organization:</strong>
+                        <p>We foster a culture of growth, innovation, and collaboration where every team member's contribution is valued and recognized.</p>
+                    </div>
+                    <div class="culture-item">
+                        <strong>Employee Empowerment:</strong>
+                        <p>Promoting agility, creativity, independence, and continuous learning to drive both personal and organizational excellence.</p>
+                    </div>
+                    <div class="culture-item">
+                        <strong>Great Place to Work Certified:</strong>
+                        <p>Three consecutive years certification reflecting our commitment to creating an exceptional workplace environment.</p>
+                    </div>
+                    <div class="culture-item">
+                        <strong>Remote-First Culture:</strong>
+                        <p>Transparent, positive, and supportive workplace enabling global collaboration and work-life balance.</p>
+                    </div>
+                </div>
+                
+                <div class="culture-content">
+                    <h3>Why Choose Market-I-Quest</h3>
+                    <div class="culture-item">
+                        <strong>Swift Delivery:</strong>
+                        <p>Extensive repository and expert network ensure rapid turnarounds without compromising quality standards.</p>
+                    </div>
+                    <div class="culture-item">
+                        <strong>Quality Assurance:</strong>
+                        <p>ISO certification and industry memberships guarantee adherence to highest research methodologies and ethical standards.</p>
+                    </div>
+                    <div class="culture-item">
+                        <strong>Global Reach:</strong>
+                        <p>On-ground specialists in 150+ countries providing localized insights and cultural understanding.</p>
+                    </div>
+                    <div class="culture-item">
+                        <strong>Technology-Driven:</strong>
+                        <p>AI and next-generation analytics enhance traditional research with cutting-edge data science capabilities.</p>
+                    </div>
+                    <div class="culture-item">
+                        <strong>Proven Track Record:</strong>
+                        <p>Serving Fortune 500 companies and government agencies with consistent delivery of actionable intelligence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonials-grid fade-in">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        TechGlobal Inc. highly recommends Market-I-Quest to every other company. We asked them to research 'renewable energy market' all over the world, and their whole arrangement was helpful to us. Market-I-Quest's insightful analysis and reports contributed to our current analysis and in creating a future strategy. The team was flexible in customizing the content based on our request, so that was also of great value to us.
+                    </div>
+                    <div class="testimonial-author">John Anderson</div>
+                    <div class="testimonial-company">Senior Vice President, TechGlobal Inc.</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        We as Global Manufacturing Solutions, certify that Market-I-Quest has successfully delivered both market studies for our research. As a customer we would like to extend our satisfaction on the results of the studies and their match of our expectations. We appreciate Market-I-Quest for the quality of content, adherence to timelines, and client support.
+                    </div>
+                    <div class="testimonial-author">Lisa Martinez</div>
+                    <div class="testimonial-company">Research Director, Global Manufacturing Solutions</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        My experience with Market-I-Quest is only positive. From high quality data at competitive price to dedication and involvement of employees, Market-I-Quest has met all expectations. I am personally enjoying any kind of interaction with the team!
+                    </div>
+                    <div class="testimonial-author">Dr. Michael Weber</div>
+                    <div class="testimonial-company">Head of Strategy, European Pharmaceuticals</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        Market-I-Quest provided Aerospace Dynamics with data sets and complex reports. High data precision is mandatory, and deviations have to be corrected with shortest possible delays. The Team at Market-I-Quest has consistently delivered on both accounts.
+                    </div>
+                    <div class="testimonial-author">Jennifer Thompson</div>
+                    <div class="testimonial-company">VP Research & Development, Aerospace Dynamics</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid fade-in">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <div class="contact-label">Headquarters:</div>
+                        <div class="contact-value">123 Research Plaza, Business District<br>New York, NY 10001, United States</div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-label">Email:</div>
+                        <div class="contact-value">info@market-i-quest.com</div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-label">Phone:</div>
+                        <div class="contact-value">+1 (555) 123-4567</div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-label">Global Presence:</div>
+                        <div class="contact-value">150+ countries worldwide</div>
+                    </div>
+                    
+                    <h3 style="margin-top: 40px;">Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📧</a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send us a message</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Market-I-Quest</h4>
+                    <p>Your trusted market intelligence partner providing actionable insights across 100+ industries and 150+ countries.</p>
+                    <div style="margin-top: 20px;">
+                        <div class="logo-text">
+                            <span class="mi">Mi</span><span class="q">Q</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <a href="#">Syndicated Reports</a>
+                    <a href="#">Custom Research</a>
+                    <a href="#">Consulting Services</a>
+                    <a href="#">Market Analysis</a>
+                    <a href="#">Competitive Intelligence</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Industries</h4>
+                    <a href="#">Aerospace & Defense</a>
+                    <a href="#">Healthcare & Pharmaceuticals</a>
+                    <a href="#">Technology & Media</a>
+                    <a href="#">Energy & Power</a>
+                    <a href="#">Automotive</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Leadership Team</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press Releases</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Market-I-Quest. All rights reserved. | <a href="#" style="color: #E67E22;">Privacy Policy</a> | <a href="#" style="color: #E67E22;">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" id="backToTop">↑</a>
+
+    <script>
+        // Counter animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('.counter');
+            
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-count'));
+                const current = parseInt(counter.textContent);
+                const increment = target / 200;
+                
+                if (current < target) {
+                    counter.textContent = Math.ceil(current + increment);
+                    setTimeout(() => animateCounters(), 10);
+                }
+            });
+        }
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    
+                    // Start counter animation when stats section is visible
+                    if (entry.target.classList.contains('stats-grid')) {
+                        setTimeout(animateCounters, 500);
+                    }
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('.fade-in, .stats-grid').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Form submission
+        document.querySelector('.contact-form form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Basic form validation
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            if (name && email && message) {
+                alert('Thank you for your message! We will get back to you within 24 hours.');
+                this.reset();
+            } else {
+                alert('Please fill in all required fields.');
+            }
+        });
+
+        // Mobile menu functionality
+        function handleResize() {
+            const navMenu = document.querySelector('.nav-menu');
+            if (window.innerWidth <= 768) {
+                navMenu.style.flexDirection = 'column';
+            } else {
+                navMenu.style.flexDirection = 'row';
+            }
+        }
+
+        window.addEventListener('resize', handleResize);
+        handleResize(); // Call on load
+
+        // Add loading animation for page load
+        window.addEventListener('load', function() {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s ease-in';
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+    </script>
+</body>
+</html>
